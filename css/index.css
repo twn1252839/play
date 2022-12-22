@@ -1,0 +1,529 @@
+/* UK_SET */
+.uk-subnavt li {
+  list-style: none;
+}
+
+/* UK_SET_END */
+@media screen and (max-width: 768px) {
+}
+
+.input-style {
+  border: 1px solid #000;
+  border-radius: 3.5px;
+  width: 21vw;
+  max-width: 199px;
+  background-color: #efeee0;
+}
+
+.input-style::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.input-size {
+  height: 30px;
+  width: 80px;
+}
+
+.w3-button:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.NavigationBorder {
+  border-bottom: 5px solid #fb98ac;
+}
+
+.MdNavigationBorder {
+  border-bottom: 2px solid #fb98ac;
+}
+
+.listHove:hover {
+  background: linear-gradient(
+    180deg,
+    #ffbd6700 20%,
+    #ffbd671e 50%,
+    #ffbd67c2 100%
+  );
+  /* border-bottom: 1.5px solid #ffbd67; */
+}
+
+#showMenu {
+  background-color: rgb(0, 0, 0, 50%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* display: none; */
+  width: 100%;
+  z-index: 99999;
+}
+
+.showMenuList {
+  background-color: #f8f2ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  line-height: 60px;
+}
+
+.showMenuList ul li {
+  list-style: none;
+}
+
+.hamburg-border-bottom {
+  border-bottom: 2px solid #d8cac5b4;
+}
+
+.BMaintenanceTime {
+  /* width: 50px;
+    height: 145px; */
+  margin-left: -8px;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateY(170%);
+}
+
+.BMaintenanceTime:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  border: 1px solid;
+}
+
+.contactUs {
+  width: 50px;
+  /* height: 165px; */
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(108%);
+  background-color: rgba(235, 148, 172, 0.9);
+}
+
+.bg-cover:hover {
+  /* background-color: #fd788e; */
+  filter: drop-shadow(0.8px 1.2px 5px #ffb8ea);
+}
+
+.bg-i-purple {
+  background-color: #3381c6;
+}
+
+.blogStyle {
+  border: #bc985e 2px solid;
+  border-radius: 10px;
+  padding: 2% 2%;
+  /* background: transparent; */
+}
+
+#MoreBtn {
+  border: #ccc 1px solid;
+  border-radius: 15px;
+  padding: 0% 2%;
+}
+
+.blog_tColor {
+  color: #1668db;
+}
+
+.blog_tColor:hover {
+  color: #f8f550;
+}
+
+.bgc1 {
+  background: url(../img/桌機index_img/bg1-1.png);
+}
+
+.bgc2 {
+  background: url(../img/桌機index_img/bg2.png);
+}
+
+.bgc3 {
+  background: url(../img/桌機index_img/bg3.png);
+}
+
+.bgc4 {
+  background: url(../img/桌機index_img/bg4.png);
+}
+
+.bgcFooter {
+  background: url(../img/桌機index_img/footer.png);
+}
+
+.btn-fixed {
+  bottom: 2.5rem;
+  right: 1rem;
+}
+
+.modal-backdrop {
+  z-index: 1;
+}
+
+/* MOD -------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  /* 手機 要加上 important */
+  .marquee_s {
+    width: 12% !important;
+  }
+  .marquee_b {
+    width: 70% !important;
+  }
+}
+.marquee_s {
+  width: 5%;
+}
+.marquee_b {
+  width: 90%;
+}
+
+/* uk-------------------- */
+.uk-tab > .uk-active > a {
+  /* color: #333; */
+  /* border-color: transparent; */
+}
+
+.uk-open > .uk-accordion-title::before {
+  background-image: url("../img/手機index_img/arrowDownList/collapsibleIconLight.svg");
+  order: 0;
+}
+
+.uk-accordion-title::before {
+  content: "";
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: 10px;
+  float: right;
+  color: #fff !important;
+  background-image: url("../img/手機index_img/arrowDownList/collapsibleIcon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* 啟動背景 */
+.uk-accordion-title:focus,
+.uk-accordion-title:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%);
+}
+
+/* 未啟動背景 */
+.uk-accordion-title {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #333;
+  overflow: hidden;
+  background-color: #f0f7ff;
+  border: 2px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+}
+
+/* switch 調整 */
+.uk-subnav-pill > .uk-active > a {
+  background-color: transparent !important;
+  color: #fff;
+}
+/* uk END-------------------- */
+
+.font_b {
+  font-weight: 900;
+}
+
+.fsz09 {
+  font-size: 0.9rem;
+}
+
+.CardBgMd {
+  align-items: center;
+  background: url(../img/手機index_img/CardBgMd.jpg) no-repeat 50%;
+  background-size: cover;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: space-between;
+  margin: 12px 0 17px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.CardBgMd_txt_BG {
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.CardBgMd-txt {
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+  display: flex;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  justify-content: space-between;
+  margin: 12px 0 17px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.CardBgMdDown {
+  align-items: center;
+  background: url(../img/手機index_img/CardBgMd.jpg) no-repeat 50%;
+  background-size: cover;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  filter: drop-shadow(3px 0px 3px rgba(0, 0, 0, 0.15));
+  justify-content: space-between;
+  margin: 12px 0 17px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.CardBg_BG {
+  background: url(../img/手機index_img/CardBgMd.jpg) no-repeat;
+  background-size: cover;
+}
+
+.noFilter {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.backgroundTop {
+  background: top !important;
+}
+
+.button_index_Md {
+  background: url(../img/手機index_img/arrowDownList/button.png) no-repeat;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  border-radius: 25px;
+}
+
+.tableTittle {
+  background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%);
+  border-radius: 8px;
+}
+.tableTittleItem {
+  background-color: #f0f7ff;
+  border: 2px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 8px;
+}
+
+.cardTittleTop {
+  background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%);
+  border-radius: 8px 8px 0px 0px;
+}
+.cardTittleDown {
+  background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%);
+  border-radius: 0px 0px 8px 8px;
+}
+.fsz-12 {
+  font-size: 1.2rem;
+}
+
+#drw .dropdown-toggle::after {
+  display: none !important;
+}
+
+#breadcrumb1 ol {
+  background-color: #3d445e;
+}
+
+#breadcrumb1 .breadcrumb-item + .breadcrumb-item::before {
+  color: #858a9a;
+  content: "|";
+}
+
+#breadcrumb1 .uk-link,
+a {
+  color: #858a9a;
+}
+.txt_secondary {
+  color: #858a9a;
+}
+
+.Button_active {
+  background: url(../img/手機index_img/CardBgMd.jpg) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  box-shadow: none;
+  color: #fff;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.marquee_bg {
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+}
+
+.line_theme_v {
+  width: 3px;
+  height: 20px;
+  background: #365a97;
+}
+
+.w-85 {
+  width: 85%;
+}
+/* style start ------------------------------------------------------ */
+.centerCenter {
+  text-align: center !important;
+  justify-content: center !important;
+  justify-self: center !important;
+  justify-items: center !important;
+  align-self: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.text-theme {
+  color: #365a97;
+}
+
+.bg-theme {
+  background-color: #f1f8ff;
+}
+.bg-theme2 {
+  background-color: #eee;
+}
+.bg-theme3 {
+  background-color: #365a97;
+}
+.bg-theme4 {
+  background-color: #ebf5ff;
+}
+
+.bg-theme2-hover:hover {
+  background-color: #365a97;
+  color: #fff;
+}
+
+.bg-linear-theme {
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+}
+
+.bg-linear-theme2 {
+  background: linear-gradient(180deg, #f0f7ff, #fff 53.65%, #edf6ff);
+}
+
+.bg-gradient-theme {
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+}
+
+.bd-theme {
+  border-color: #365a97 !important;
+}
+
+/* style end ------------------------------------------------------ */
+
+.Game_BG {
+  background: url(../img/手機各分頁img/gameBlogPage/OberBaccarat/PC/BG.png);
+}
+
+.bd_transparent {
+  border: transparent !important;
+}
+
+.filter_a {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.game_cardwrap {
+  min-height: 31rem;
+  background: url(../img/桌機index_img/GAME/gameList/stage.png) no-repeat bottom;
+  background-position-y: 16rem;
+  background-size: contain;
+  /* filter: drop-shadow(0.8px 1.2px 2px rgb(172, 85, 85)); */
+}
+
+.game_cardwrap2 {
+  min-height: 35rem;
+  background: url(../img/桌機index_img/GAME/gameList/stage.png) no-repeat bottom;
+  background-position-y: 21.5rem !important;
+  background-size: contain;
+  /* filter: drop-shadow(0.8px 1.2px 2px rgb(172, 85, 85)); */
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+#canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper_w {
+  width: 85% !important;
+  margin-top: -5rem;
+}
+
+/* 強制單頁控制UK SWITCH */
+/* 啟動背景 */
+.JA .uk-accordion-title:focus,
+.JA .uk-accordion-title:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background: #365a97 !important;
+}
+
+/* 未啟動背景 */
+.JA .uk-accordion-title {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #333;
+  overflow: hidden;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+  /* background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%); */
+  /* background-color: #365a97 !important; */
+  /* background-color: transparent !important; */
+  border: transparent !important;
+  /* filter: none !important; */
+  /* border-radius: 8px; */
+}
+
+.JA .uk-open > .uk-accordion-title::before {
+  background-image: url("../img/手機index_img/arrowDownList/Vector.png");
+}
+
+.JA .uk-accordion-title::before {
+  background-image: url("../img/手機index_img/arrowDownList/Vector1.png");
+}
+
+.line_ss {
+  height: 70px;
+  padding-top: 1.3rem;
+  border-width: 0.35rem !important;
+  border-radius: 5%;
+  border-bottom: 1px solid #1e50a6;
+  color: #1e50a6;
+}
+
+.table_set {
+  height: 500px;
+  overflow-y: scroll;
+}

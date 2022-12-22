@@ -1,0 +1,1841 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- IE兼容 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- WOW CSS -->
+  <!-- <link rel="stylesheet" href="./css/animation.css"> -->
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- favicon -->
+  <!-- <link rel="icon" href="./img/favicon1.ico"> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- w3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- UK CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+  <!-- UK JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="./js/Addhtml.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index-main.css">
+  <link rel="stylesheet" href="./css/progress.css">
+  <link rel="stylesheet" href="./css/section5Index.css">
+  <link rel="stylesheet" href="./css/scrollbar.css">
+
+  <!-- vue -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+
+  <title>Boheaven</title>
+  <style>
+    .titleChange {
+      font-size: 18px;
+    }
+
+    @media(min-width: 996px) {
+
+      address,
+      dl,
+      fieldset,
+      figure,
+      ol,
+      p,
+      pre,
+      ul {
+        margin: 0 0 50px 0;
+      }
+
+      .titleChange {
+        font-size: 24px;
+      }
+
+    }
+
+    .uk-tab>.uk-active>a {
+      /* color: #fff;
+            border-color: #bc985e;
+            background-color: #bc985e; */
+      /* filter: blur(0); */
+    }
+
+    /* .uk-tab>*>a {
+            color: #bc985e;
+            font-size: 1.2rem;
+        } */
+
+    /* .uk-tab>*>a:hover {
+            background-color: #bc985e;
+            color: #fff;
+        } */
+
+    .card {
+      border: 0px solid;
+    }
+
+    .hoverListIItem .col {
+      cursor: pointer;
+    }
+
+    .line_ss {
+      height: 70px;
+      padding-top: 1.3rem;
+      border-width: .35rem !important;
+      border-radius: 5%;
+      border-bottom: 1px solid #1E50A6;
+      color: #1E50A6;
+    }
+
+    #UkBgc .dropdown-item .uk-active {
+      background-color: #365a97;
+    }
+
+    #UkBgc .dropdown-item .uk-active a {
+      color: #fff;
+    }
+
+    #UkBgc .dropdown-item {
+      color: black;
+      text-decoration: none;
+    }
+
+    #UkBgc .dropdown-item:focus,
+    #UkBgc .dropdown-item:hover {
+      color: #fff;
+      background-color: #365a97;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- 電腦板  ------------------------------------------------------------------------>
+  <script>
+    indexLogin();
+    service();
+    // PageHeader();
+    // PageHeaderBanner();
+    // MyPurse();
+  </script>
+
+  <!-- banner -->
+  <div class="container-fluid d-none d-md-block p-0 CardBg_BG" style="">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <a href="#" class="carousel-item active">
+          <img src="./img/桌機index_img/banner1.png" class="d-block w-100" alt="...">
+        </a>
+        <a href="#" class="carousel-item">
+          <img src="./img/桌機index_img/banner2.png" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="container-fluid p-0 d-none d-md-block bgc-flex-v" style="background:url(./img/手機index_img/CardBgMd.jpg);">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">遊戲大廳</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <ul class="uk-subnav uk-subnav-pill row px-3 CardBgMd-txt justify-content-start rounded-pill" uk-switcher>
+        <li class="col-3 col-lg-2 px-0 gameList1">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/List1.png" alt="">
+          </a>
+        </li>
+        <li class="col-3 col-lg-2 px-0 gameList2">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/2.png" alt="">
+          </a>
+        </li>
+        <li class="col-3 col-lg-2 px-0 gameList3">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/3.png" alt="">
+          </a>
+        </li>
+        <li class="col-3 col-lg-2 px-0 gameList4">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/4.png" alt="">
+          </a>
+        </li>
+        <li class="col-3 col-lg-2 px-0 gameList5">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/5.png" alt="">
+          </a>
+        </li>
+        <li class="col-3 col-lg-2 px-0 gameList6">
+          <a href="#" class="p-1 text-center mx-3 bg-transparent">
+            <img class="img-fluid" src="./img/桌機index_img/GAME/gameList/6.png" alt="">
+          </a>
+        </li>
+      </ul>
+
+      <!-- MOD -->
+      <ul class="uk-switcher uk-margin uk-position-relative">
+        <li class="uk-active">
+          <!-- Swiper -->
+          <div class="swiper game_cardwrap px-3">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/3.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/4.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/5.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="swiper-slide bg-transparent">
+                <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/桌機index_img/GAME/gameList/gameItem/1/6.png" alt="" class="img-fluid">
+                </button>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper('.swiper', {
+              slidesPerView: 4,
+              direction: getDirection(),
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              on: {
+                resize: function () {
+                  swiper.changeDirection(getDirection());
+                },
+              },
+            });
+
+            function getDirection() {
+              var windowWidth = window.innerWidth;
+              var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+              return direction;
+            }
+          </script>
+
+
+        </li>
+
+        <li>
+
+          <div class="row px-0 py-2 game_cardwrap">
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/2/1.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/2/2.png" alt="" class="img-fluid">
+            </button>
+          </div>
+
+        </li>
+        <li>
+
+          <div class="row px-0 py-2 game_cardwrap">
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/3/1.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/3/2.png" alt="" class="img-fluid">
+            </button>
+          </div>
+
+        </li>
+        <li class="game_cardwrap">
+
+          <div class="row py-3 px-5 w-75 centerCenter">
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/1.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/2.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/3.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/4.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/5.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent col-4 py-2 px-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/4/6.png" alt="" class="img-fluid">
+            </button>
+          </div>
+
+        </li>
+        <li>
+
+          <div class="row px-0 py-2 game_cardwrap">
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/5/1.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/5/2.png" alt="" class="img-fluid">
+            </button>
+          </div>
+
+        </li>
+        <li>
+
+          <div class="row px-0 py-2 game_cardwrap">
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/6/1.png" alt="" class="img-fluid">
+            </button>
+            <button class="uk-button bg-transparent p-0 centerCenter" data-toggle="modal"
+              data-target="#exampleModalCenter">
+              <img src="./img/桌機index_img/GAME/gameList/gameItem/6/2.png" alt="" class="img-fluid">
+            </button>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">博天堂介紹</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="CardBgMd-txt row uk-position-relative">
+        <div class="uk-position-absolute uk-position-top-left us" style="">
+          <img class="img-fluid" src="./img/桌機index_img/title2BGLeft1.png" alt="">
+        </div>
+        <div class="uk-position-absolute uk-position-top-right us" style="right: 70px;top: 10px;">
+          <img class="img-fluid" src="./img/桌機index_img/title2BGLeft3.png" alt="">
+        </div>
+        <div class="row pb-5 pt-3 font-weight-bold" style="padding: 0 10%;">
+          <img class="img-fluid centerCenter w-25" src="./img/桌機index_img/logo.png" alt="">
+          <p class="text-justify pt-5">
+            博天堂娛樂城是全台出款最快的娛樂城，平均3分鐘內完成出款作業。24小時客服溫柔體貼、有問必答。博天堂娛樂城提供線上眾多娛樂城遊戲，百家樂、老虎機、體育電競、賓果、彩票、捕魚等等線上遊戲，博天堂娛樂城註冊、首儲、再儲皆送大禮，等您來體驗。
+          </p>
+          <p class="text-justify">
+            100%保證兌現 &
+            個資/資金安全防護，本網站是由博天堂官方直營，玩家的正常投注行為100%支付保證，資金與個資由嚴密的加密系統控管。博天堂娛樂城在此鄭重聲明，絕不會將玩家資料銷售、洩漏給第三方；與此同時，玩家的投注行為，也將受到完善的風控系統掌握，任何套利、違規行為將於第一時間回報給客服人員，以保障其他玩家的遊玩公平性。
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">加入桌面</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="CardBgMd-txt row uk-position-relative">
+        <div class="uk-position-absolute uk-position-bottom-left us" style="right: 0px;bottom: 80px;">
+          <img class="img-fluid" src="./img/桌機index_img/title2BGLeft2.png" alt="">
+        </div>
+        <div class="uk-position-absolute uk-position-bottom-right us" style="right: 10px;bottom: 20px;">
+          <img class="img-fluid" src="./img/桌機index_img/title2BGLeft4.png" alt="">
+        </div>
+        <div class="row pb-5 pt-3 font-weight-bold" style="padding: 0 10%;">
+          <!-- MOD -->
+          <img class="col-12 col-lg-7" src="./img/桌機index_img/phone.png" alt="">
+
+          <div class="col-12 col-lg-5 d-block py-3 px-0 my-auto">
+            <p class="text-theme h5 font-weight-bold">官網加入手機主畫面</p>
+            <p class="">
+              不論ios或者Android，都可將博天堂娛樂城的網址直接加入桌面，不僅方便您未來進入網站，博天堂也提供了首次加入桌面的 <span class="text-theme3">200元紅利金！</span>
+              博天堂娛樂城預計於明年提供APP下載服務，請博天堂會員密切留意新聞。</p>
+            <button class="uk-button bg-transparent py-1 px-0 btn-block">
+              <img src="./img/桌機index_img/btn_ios.png" class="img-fluid" alt="">
+            </button>
+            <button class="uk-button bg-transparent py-1 px-0 btn-block">
+              <img src="./img/桌機index_img/btn_and.png" class="img-fluid" alt="">
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">娛樂城優惠</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="row p-3 align-items-end">
+        <div class="col px-0">
+          <img class="img-fluid" src="./img/桌機index_img/CasinoDeals.png" alt="">
+        </div>
+        <div class="col CardBgMd-txt m-1 py-3">
+          <div class="row centerCenter">
+            <p class="text-theme font-weight-bold h4 col-12 centerCenter">新手優惠專區</p>
+            <ol class="col-12 centerCenter py-3 px-5 m-0">
+              <li>娛樂城體驗金免費168</li>
+              <li>新會員首儲1000贈500</li>
+              <li>新會員好禮贈送五選一</li>
+            </ol>
+            <button class="uk-button bg-transparent btn-block">
+              <img class="img-fluid" src="./img/桌機index_img/CasinoDealsBtn.png" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="col CardBgMd-txt m-1 py-3">
+          <div class="row centerCenter">
+            <p class="text-theme font-weight-bold h4 col-12 centerCenter">會員優惠專區</p>
+            <ol class="col-12 centerCenter py-3 px-5 m-0">
+              <li>遊7日簽到週週拿666</li>
+              <li>復仇金10%優惠無限領</li>
+              <li>BGN每日任務天天領</li>
+              <li>日日返水無流水無上限</li>
+              <li>VIP尊享貴賓特權福利</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">博天堂優勢</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="row p-3 align-items-end">
+        <table class="table border rounded-pill border-primary">
+          <thead class="">
+            <tr class="text-center tableTittle text-light">
+              <th scope="col">VIP等級</th>
+              <th scope="col">博天堂娛樂城</th>
+              <th scope="col">其它娛樂城</th>
+            </tr>
+          </thead>
+          <style>
+            #table_bg th,
+            #table_bg td:nth-child(3) {
+              background-color: #EBF5FF;
+            }
+          </style>
+          <tbody id="table_bg">
+            <tr class="text-center">
+              <th class="bg-theme">營運方式</th>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                現金版
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                信用版
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th>是否正常出金</th>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                正常出金且有第三方認證
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                品質參差不齊危險
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th>存提款速度</th>
+              <td class="uk-position-relative">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                非常快速
+                <img src="./img/桌機index_img/vs.png" class="img-fluid uk-position-absolute uk-position-center-right"
+                  style="right: -65px;" alt="">
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                較慢、可能不出
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th>客服品質</th>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                專業親切
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                參差不齊
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th>客服上班時間</th>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                24小時全年無休
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                不固定
+              </td>
+            </tr>
+            <tr class="text-center">
+              <th>RWD網頁</th>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                有，兼容個個裝置
+              </td>
+              <td>
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                無
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">娛樂城存提</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="row cardTittleTop text-light py-2">
+        <div class="col text-center font-weight-bold h5 pt-2">娛樂城存款</div>
+      </div>
+      <div class="row text-light p-0 border-0">
+        <img src="./img/桌機index_img/Frame 1229.jpg" class="img-fluid w-100" alt="">
+      </div>
+      <!-- <div class="row py-2 cardTittleTop rounded-0">
+        <div class="col-8">
+          <p class="text-light font-weight-bold h5 col-12 centerCenter">單筆金額$1000~20萬</p>
+        </div>
+        <div class="col-4">
+          <p class="text-light font-weight-bold h5 col-12 centerCenter">單筆金額$300~2萬</p>
+        </div>
+      </div> -->
+      <div class="row cardTittleDown text-light py-2">
+        <div class="col text-center font-weight-bold h5 pt-2 cursor_pointer">如何存款 ></div>
+      </div>
+      <!--  -->
+      <div class="row cardTittleTop text-light py-2 mt-3 list">
+        <div class="col text-center font-weight-bold h5 pt-2">娛樂城出金</div>
+      </div>
+      <div class="row text-light p-0 border-0">
+        <img src="./img/桌機index_img/Frame 1208.jpg" class="img-fluid w-100" alt="">
+      </div>
+      <div class="row cardTittleDown text-light py-2">
+        <div class="col text-center font-weight-bold h5 pt-2 cursor_pointer">如何出金 ></div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">娛樂城Q&A</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+
+      <!-- MOD -->
+      <div class="mx-2" id="">
+        <ul class="uk-accordion row" uk-accordion>
+          <li class="col-12 col-lg-6 mt-3">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">博天堂娛樂城會不會出金?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-lg-6">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">如何選擇一間安全的線上現金版娛樂城?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-lg-6">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">博天堂娛樂城穩嗎是不是詐騙?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-lg-6">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">娛樂城為什麼要實名制、驗證資料?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-lg-6">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">黑網詐騙娛樂城怎麼區分?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-lg-6">
+            <a class="uk-accordion-title py-2 px-3 fsz-1" href="#">黑網詐騙娛樂城怎麼區分?</a>
+            <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+              <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span class="text-theme">存取款教學</span>
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col">
+          <img src="./img/桌機index_img/titleleft.svg" alt="">
+        </div>
+        <div class="col text-center h1 font-weight-bold text-theme my-auto">優質服務</div>
+        <div class="col">
+          <img src="./img/桌機index_img/titleright.svg" alt="">
+        </div>
+      </div>
+      <div class="row px-0">
+        <div class="col px-0 bg_progress">
+          <!-- title卡片 -->
+          <div class="uk-inline w-100 d-flex justify-content-center my-3">
+            <img src="./img/桌機index_img/progress/BG1.png" class="img-fluid" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-center w-100 centerCenter bg-transparent">
+              <div class="row" id="progress_a">
+                <div class="progress blue">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value ">60秒</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col px-0 bg_progress">
+          <!-- title卡片 -->
+          <div class="uk-inline w-100 d-flex justify-content-center my-3">
+            <img src="./img/桌機index_img/progress/BG1.png" class="img-fluid" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-center w-100 centerCenter bg-transparent">
+              <div class="row" id="progress_b">
+                <div class="progress blue">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value ">80家</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col px-0 bg_progress">
+          <!-- title卡片 -->
+          <div class="uk-inline w-100 d-flex justify-content-center my-3">
+            <img src="./img/桌機index_img/progress/BG1.png" class="img-fluid" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-center w-100 centerCenter bg-transparent">
+              <div class="row" id="progress_c">
+                <div class="progress blue">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value ">5分</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col px-0 bg_progress">
+          <!-- title卡片 -->
+          <div class="uk-inline w-100 d-flex justify-content-center my-3">
+            <img src="./img/桌機index_img/progress/BG1.png" class="img-fluid" alt="">
+            <div class="uk-overlay uk-overlay-default uk-position-center w-100 centerCenter bg-transparent">
+              <div class="row" id="progress_d">
+                <div class="progress blue">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value ">22家</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row p-0">
+        <div class="col-12 col-lg-6 p-3 text-center">
+          <!-- 右字 media -->
+          <div class="media CardBgMd_txt_BG p-3">
+            <div class="centerCenter p-0 pl-3">
+              <img class="img-fluid" src="./img/桌機index_img/Quality0.png" alt="">
+            </div>
+            <div class="media-body pl-5 centerCenter">
+              <p class="pb-0 text-theme font-weight-bold text-left fsz-12">極速存提轉款
+              </p>
+              <p class="my-0 text-left txt_secondary">FAST TRANSACTION</p>
+              <p class="my-0 text-left">存款、取款、轉帳超快速，入帳無延遲。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-3 text-center">
+          <!-- 右字 media -->
+          <div class="media CardBgMd_txt_BG p-3">
+            <div class="centerCenter p-0 pl-3">
+              <img class="img-fluid" src="./img/桌機index_img/Quality1.png" alt="">
+            </div>
+            <div class="media-body pl-5 centerCenter">
+              <p class="pb-0 text-theme font-weight-bold text-left fsz-12">最完整娛樂體驗</p>
+              <p class="my-0 text-left txt_secondary">1000+ GAMES</p>
+              <p class="my-0 text-left">博天堂娛樂城擁有最豐富的遊戲種類。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-3 text-center">
+          <!-- 右字 media -->
+          <div class="media CardBgMd_txt_BG p-3">
+            <div class="centerCenter p-0 pl-3">
+              <img class="img-fluid" src="./img/桌機index_img/Quality2.png" alt="">
+            </div>
+            <div class="media-body pl-5 centerCenter">
+              <p class="pb-0 text-theme font-weight-bold text-left fsz-12">加密安全管理
+              </p>
+              <p class="my-0 text-left txt_secondary">ALWAYS ON PROTECTION</p>
+              <p class="my-0 text-left">獨家開發加密技術，資料保障最完善。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-3 text-center">
+          <!-- 右字 media -->
+          <div class="media CardBgMd_txt_BG p-3">
+            <div class="centerCenter p-0 pl-3">
+              <img class="img-fluid" src="./img/桌機index_img/Quality3.png" alt="">
+            </div>
+            <div class="media-body pl-5 centerCenter">
+              <p class="pb-0 text-theme font-weight-bold text-left fsz-12">支持所有行動設備
+              </p>
+              <p class="my-0 text-left txt_secondary">SUPPORT FOR ALL DEVICES</p>
+              <p class="my-0 text-left">不管使用任何設備，娛樂投注隨心所欲！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="CardBgMd font-weight-bold py-2 row">
+        <p class="text-theme font_b col-12 py-1" style="line-height: 1.2rem;">娛樂城反水是什麼、有哪些種類？娛樂城獎勵一次看！</p>
+        <p class="col-12 text-secondary">
+          2022-03-03 14:00:00
+        </p>
+        <p class="col-10 fsz-08">
+          娛樂城經常向他們的玩家提供娛樂城反水，以鼓勵他們繼續在那裡博弈、或是獎勵他們的忠誠度...
+        </p>
+        <a href="./page/Blog.html" class="col-2 btn ">
+          <p class="text-secondary text-right fsz-08">更多詳情&gt;&gt;</p>
+        </a>
+      </div>
+      <div class="CardBgMd font-weight-bold py-2 row">
+        <p class="text-theme font_b col-12 py-1" style="line-height: 1.2rem;">娛樂城反水是什麼、有哪些種類？娛樂城獎勵一次看！</p>
+        <p class="col-12 text-secondary">
+          2022-03-03 14:00:00
+        </p>
+        <p class="col-10 fsz-08">
+          娛樂城經常向他們的玩家提供娛樂城反水，以鼓勵他們繼續在那裡博弈、或是獎勵他們的忠誠度...
+        </p>
+        <a href="./page/Blog.html" class="col-2 btn">
+          <p class="text-secondary text-right fsz-08">更多詳情&gt;&gt;</p>
+        </a>
+      </div>
+      <!--  -->
+      <div class="centerCenter py-3">
+        <a href="./page/Blog.html" class="uk-button bg-transparent p-0 m-0">
+          <img class="img-fluid " src="./img/桌機index_img/more.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 手機板 header ------------------------------------------------------------------------>
+  <!-- MD Navigation Bars ------------------------------------>
+  <div class="container-fluid p-0 d-md-none bgc-flex position-fixed fixed-top bg-light" id="hi5">
+    <div class="container">
+      <div class="row py-1" style="align-items: center;">
+        <!-- LOGO -->
+        <div class="col-3 px-0 text-center">
+          <div class="text-center" style="margin-left: -5%;"><a href="./index.html"><img
+                src="./img/桌機index_img/logo.png" alt="" class="img-fluid"></a></div>
+        </div>
+        <!-- 登入 -->
+        <div class="col-7 p-0 col-md-5 text-right">
+          <!-- <a href=" ./page/indexLoginPage.html"><input
+                            class="btn rounded py-1 input-size font-weight-bold text-light"
+                            style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);" type="submit"
+                            value="登入"></a> -->
+          <!-- <a href="./header page/Signup.html" target="_black"><input
+                            class="btn py-1 input-size font-weight-bold"
+                            style="background: linear-gradient(180deg, #F8E98E 0%, #F2D06F 100%);" type="button"
+                            value="註冊"></a> -->
+
+          <!-- 手機會員 -->
+          <!-- <img class="img-fluid" src="./img/手機index_img/V1_1.png" alt=""> -->
+          <!-- 自製dropdown -->
+          <span class="p-0 uk-inline clearfix">
+            <button class="uk-button bg-transparent tr fsz-1 m-0 p-0 text-right" type=" button">
+              <span>會員: 0987123654</span>
+              <span>$3,000</span>
+              <i class="fa-solid fa-angle-down pl-2" style="margin-top: -5px;"></i>
+            </button>
+          </span>
+          <!-- UK_dropdown -->
+          <div uk-dropdown="mode: click" class="py-1 px-3 m-0 pb-3 arrow_up"
+            style="background-color: rgba(0, 0, 0, 0.8);width: 60vw;">
+            <style>
+              .arrow_up:before {
+                border-bottom: .5rem solid rgba(0, 0, 0, .8);
+                border-left: .35rem solid transparent;
+                border-right: .35rem solid transparent;
+                content: "";
+                position: absolute;
+                right: 1.5rem;
+                top: -.5rem;
+              }
+            </style>
+            <div class=" py-3" style="height: 250px;overflow-y: scroll;overflow-x: hidden;">
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SA真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OG真人</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SUPER體育</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB體育</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SUPER彩票</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">9K彩票</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">DT電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SP電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">RTG電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">必贏電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">PLAY電子</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">博樂棋牌</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">OB棋牌</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light border-bottom border-secondary">
+                <div class="col px-0 border-right border-secondary py-0">SP捕魚</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+              <div class="row px-3 py-1 text-light">
+                <div class="col px-0 border-right border-secondary py-0">必贏捕魚</div>
+                <div class="col pl-2 text-theme5">0</div>
+              </div>
+            </div>
+            <div class="row pt-3 border-top border-secondary">
+              <div class="col text-right pl-2 text-theme5">總額度:3,000.00</div>
+            </div>
+            <button class="btn bg-theme3 rounded rounded-pill py-1 my-1 btn-block text-light">
+              一鍵轉回
+            </button>
+          </div>
+        </div>
+
+        <!-- 24HR客服 -->
+        <div class="col-2 col-md-2 px-0 centerCenter uk-position-relative">
+          <a href="./header page/3FAQ.html" class="text-right"><img id="hrServiceBtn"
+              src="./img/手機index_img/Subtract.png" alt="" class="img-fluid" data-toggle="modal"
+              data-target="#exampleModal"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- banner -->
+  <div class="container-fluid p-0 d-md-none uk-position-relative">
+    <!--  -->
+    <div class="hi5"></div>
+    <script>
+      $(document).ready(function () {
+        let hi5 = $('#hi5').height()
+        let h = '0'
+        $('.hi5').height(hi5 - h);
+      });
+    </script>
+    <!--  -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/手機index_img/banner.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/手機index_img/banner1.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 相通 ------------------------------------------------------------------------>
+  <!-- marquee -->
+  <div class="container-fluid p-0 m-0 bgc-body-color d-md-none">
+    <div class="container bgc-flex p-0 m-0" style="background:url(./img/手機index_img/marqueeBG1.png);">
+      <div class="row p-0 m-0">
+        <div class="text-center marquee_s" style="padding-top: 0.1em;">
+          <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
+        </div>
+        <div class="marquee_b">
+          <marquee direction="left" height="30" scrollamount="6" behavior="left" class="text-theme h-100 pt-1"
+            onmouseover="this.stop()" onmouseout="this.start()">
+            【維護公告1】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+            開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+            敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+            親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+            親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+          </marquee>
+        </div>
+        <div class="text-center marquee_s" style="padding-top: 0.1em;">
+          <a href="./header page/3FAQ.html"><input class="btn py-0 px-3 rounded-pill
+     text-center font-weight-bold text-light fsz-08"
+              style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);height: 65%;" type="submit"
+              value="更多"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 遊戲廳 MOD -->
+  <div class="container-fluid p-0 bg-theme d-md-none min-vh-100">
+    <div class="container p-0">
+      <div class="row justify-content-center pt-2 px-1 m-0">
+        <ul class="uk-subnav col-3 flex-column px-2 mx-auto list-unstyled" uk-switcher>
+          <!-- ./img/手機index_img/game1active.png -->
+          <li class="p-0 MDgameList1">
+            <a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/List1.png" alt="">
+            </a>
+          </li>
+          <li class="p-0 MDgameList2"><a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/2.png" alt="">
+            </a>
+          </li>
+          <li class="p-0 MDgameList3"><a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/3.png" alt="">
+
+            </a>
+          </li>
+          <li class="p-0 MDgameList4"><a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/4.png" alt="">
+
+            </a>
+          </li>
+          <li class="p-0 MDgameList5"><a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/5.png" alt="">
+
+            </a>
+          </li>
+          <li class="p-0 MDgameList6"><a href="#" class="py-1 px-0 filter_a">
+              <img src="./img/手機index_img/game/MDgameList/6.png" alt="">
+
+            </a>
+          </li>
+        </ul>
+
+        <ul class="uk-switcher col-9 px-0">
+          <!-- 百家樂 -->
+          <li class="uk-active">
+            <div class="row m-0 p-0">
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="uk-button bg-transparent p-0" data-toggle="modal"
+                  data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat_Ober.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat_OB.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat_SA.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat__WM.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat_OB.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/baccarat/baccarat_OG.png" alt="" class="img-fluid">
+                </button>
+              </div>
+
+
+            </div>
+          </li>
+          <!-- 體育 -->
+          <li>
+            <div class="row m-0">
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/sport/sport1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/sport/sport2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+            </div>
+          </li>
+          <!-- 賓果 -->
+          <li>
+            <div class="row m-0">
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0 " data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/bingo/bingo1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/bingo/bingo2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+            </div>
+          </li>
+          <!-- 電子 -->
+          <li>
+            <div class="row m-0 p-0">
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot3.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot4.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot5.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-6 col-md-3 p-1 centerCenter text-center">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/slot/slot6.png" alt="" class="img-fluid">
+                </button>
+              </div>
+
+
+            </div>
+          </li>
+          <!-- 棋牌 -->
+          <li>
+            <div class="row m-0">
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/card/card1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/card/card2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+            </div>
+          </li>
+          <!-- 捕魚 -->
+          <li>
+            <div class="row m-0">
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/fish/fish1.png" alt="" class="img-fluid">
+                </button>
+              </div>
+              <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#exampleModalCenter">
+                  <img src="./img/手機index_img/game/fish/fish2.png" alt="" class="img-fluid">
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- MODAL 位置 -->
+      </div>
+      <div class="row m-0">
+        <a href="#arrowDown" class="col h5 font-weight-bold text-secondary text-center pt-5" id="arrowDown">
+          <img src="./img/手機index_img/arrowDown.png" alt="">
+          點擊看更多
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--  uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 700; repeat: true" -->
+  <div id="arrowDownList" class="">
+    <div>
+      <div class="uk-card w-100 p-0">
+        <!-- MMOD -->
+        <!-- 活動 + 關於我們 MOD -->
+        <div id="" class="container-fluid p-0 m-0 bg-theme d-md-none">
+          <div class="container" style="padding-bottom: 150px;">
+            <p class="text-theme font_b h5 pl-2">關於我們</p>
+            <div class="text-center py-3">
+              <img src="./img/桌機index_img/logo.png" class="w-75" alt="">
+            </div>
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="col-12">
+                博天堂娛樂城是全台出款最快的娛樂城，平均3分鐘內完成出款作業。24小時客服溫柔體貼、有問必答。博天堂娛樂城提供線上眾多娛樂城遊戲，百家樂、老虎機、體育電競、賓果、彩票、捕魚等等線上遊戲，博天堂娛樂城註冊、首儲、再儲皆送大禮，等您來體驗。
+              </p>
+              <p class="col-12 pt-1">
+                100%保證兌現 &
+                個資/資金安全防護，本網站是由博天堂官方直營，玩家的正常投注行為100%支付保證，資金與個資由嚴密的加密系統控管。博天堂娛樂城在此鄭重聲明，絕不會將玩家資料銷售、洩漏給第三方；與此同時，玩家的投注行為，也將受到完善的風控系統掌握，任何套利、違規行為將於第一時間回報給客服人員，以保障其他玩家的遊玩公平性。
+              </p>
+            </div>
+            <p class="text-theme font_b h5 pl-2">官網加入</p>
+            <img src="./img/手機index_img/arrowDownList/2.png" class="img-fluid w-100" alt="">
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="text-theme font_b h5 col-12 py-1">官網加入手機主畫面</p>
+              <p class="col-12">
+                不論ios或者Android，都可將博天堂娛樂城的網址直接加入桌面，不僅方便您未來進入網站，博天堂也提供了首次加入桌面的200元紅利金！博天堂娛樂城預計於明年提供APP下載服務，請博天堂會員密切留意新聞。
+              </p>
+              <div class="col-12 p-0 centerCenter">
+                <button class="btn py-1">
+                  <img src="./img/手機index_img/arrowDownList/btn_ios.png" class="img-fluid" alt="">
+                </button>
+                <button class="btn py-1">
+                  <img src="./img/手機index_img/arrowDownList/btn_and.png" class="img-fluid" alt="">
+                </button>
+              </div>
+            </div>
+            <p class="text-theme font_b h5 pl-2">新手優惠專區</p>
+            <img src="./img/手機index_img/arrowDownList/CasinoDeals.png" class="img-fluid" alt="">
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="text-theme font_b h5 col-12 py-1 text-center">官網加入手機主畫面</p>
+              <p class="col-12 text-center">
+                娛樂城體驗金免費168
+              </p>
+              <p class="col-12 text-center">
+                新會員首儲1000贈500
+              </p>
+              <p class="col-12 text-center">
+                新會員好禮贈送五選一
+              </p>
+
+              <div class="col-12 p-0 text-center">
+                <button class="btn my-1 button_index_Md centerCenter">
+                  <p class="font_b text-light">娛樂城優惠</p>
+                </button>
+              </div>
+            </div>
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="text-theme font_b h5 col-12 py-1 text-center">會員優惠專區</p>
+              <p class="col-12 text-center">
+                博天堂7日簽到週週拿666
+              </p>
+              <p class="col-12 text-center">
+                復仇金10%優惠無限領
+              </p>
+              <p class="col-12 text-center">
+                BGN每日任務天天領
+              </p>
+              <p class="col-12 text-center">
+                日日返水無流水無上限
+              </p>
+              <p class="col-12 text-center">
+                VIP尊享貴賓特權福利
+              </p>
+
+            </div>
+            <p class="text-theme font_b h5 pl-2 my-1">博天堂優勢</p>
+            <div class="row tableTittle text-light py-2 mx-2">
+              <div class="col text-center">博天堂娛樂城</div>
+              <div class="col text-center">其它娛樂城</div>
+            </div>
+            <div class="row tableTittleItem py-2 m-2 font-weight-bold">
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                現金版
+              </div>
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                信用版
+              </div>
+            </div>
+            <div class="row tableTittleItem py-2 m-2 font-weight-bold">
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                正常出金
+              </div>
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                不一定出金
+              </div>
+            </div>
+            <div class="row tableTittleItem py-2 m-2 font-weight-bold">
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                存提非常快速
+              </div>
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                存提較慢or不出
+              </div>
+            </div>
+            <div class="row tableTittleItem py-2 m-2 font-weight-bold">
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                客服親切專業
+              </div>
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                客服參差不齊
+              </div>
+            </div>
+            <div class="row tableTittleItem py-2 m-2 font-weight-bold">
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/Success.png" class="img-fluid" alt="">
+                每月新優惠活動
+              </div>
+              <div class="col text-center p-0">
+                <img src="./img/手機index_img/arrowDownList/error.png" class="img-fluid" alt="">
+                優惠活動不會更新
+              </div>
+            </div>
+
+            <p class="text-theme h5 p-2">娛樂城存提</p>
+            <div class="row cardTittleTop text-light py-2 mx-2">
+              <div class="col text-center">娛樂城存款</div>
+            </div>
+            <img src="./img/手機index_img/arrowDownList/ATMMD1.png" class="img-fluid px-2" alt="">
+            <div class="row cardTittleDown text-light py-1 mx-2">
+              <button class="btn py-0 text-light col text-center">如何存款<i
+                  class="fa-solid fa-angle-right pl-3"></i></button>
+            </div>
+            <!--  -->
+            <div class="row cardTittleTop text-light py-2 mx-2 mt-2">
+              <div class="col text-center">娛樂城存款</div>
+            </div>
+
+            <img src="./img/手機index_img/arrowDownList/ATMMD2.jpg" class="img-fluid px-2" alt="">
+
+            <div class="row cardTittleDown text-light py-1 mx-2">
+              <button class="btn py-0 text-light col text-center">如何存款<i
+                  class="fa-solid fa-angle-right pl-3"></i></button>
+            </div>
+
+            <p class="text-theme font_b h5 p-2">娛樂城Q&A</p>
+            <!-- 摺疊有icon -->
+            <div class="mx-2" id="QA">
+              <ul uk-accordion>
+                <li>
+                  <a class="uk-accordion-title py-2 px-3 fsz09" href="#">博天堂娛樂城會不會出金?</a>
+                  <div class="uk-accordion-content tableTittleItem m-0">
+                    <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span
+                        class="text-theme">存取款教學</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title py-2 px-3 fsz09" href="#">如何選擇一間安全的線上現金版娛樂城?</a>
+                  <div class="uk-accordion-content tableTittleItem m-0">
+                    <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span
+                        class="text-theme">存取款教學</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title py-2 px-3 fsz09" href="#">博天堂娛樂城穩嗎是不是詐騙?</a>
+                  <div class="uk-accordion-content tableTittleItem m-0">
+                    <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span
+                        class="text-theme">存取款教學</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title py-2 px-3 fsz09" href="#">娛樂城為什麼要實名制、驗證資料?</a>
+                  <div class="uk-accordion-content tableTittleItem m-0">
+                    <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span
+                        class="text-theme">存取款教學</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title py-2 px-3 fsz09" href="#">黑網詐騙娛樂城怎麼區分?</a>
+                  <div class="uk-accordion-content tableTittleItem m-0">
+                    <p class="p-2">博天堂娛樂城保證存提款穩定!額外有DU出金認證，及龐大的資本額，實力過硬、不容小覷。點擊觀看這篇文章 : <span
+                        class="text-theme">存取款教學</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <p class="text-theme font_b h5 p-2">優質服務</p>
+            <div class="row px-2">
+              <div class="col-6 p-1">
+                <div class="row py-3  CardBgMd-txt">
+                  <div class="col-12 centerCenter">
+                    <img src="./img/桌機index_img/Quality0.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-12 centerCenter ">
+                    <p class="text-theme font-weight-bold text-center">極速存提轉款</p>
+                    <p class=" text-center text-justify">存款、取款、轉帳超
+                      快速，入帳無延遲。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-1">
+                <div class="row py-3  CardBgMd-txt">
+                  <div class="col-12 centerCenter">
+                    <img src="./img/桌機index_img/Quality1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-12 centerCenter ">
+                    <p class="text-theme font-weight-bold text-center">最完整娛樂體驗</p>
+                    <p class=" text-center">博天堂娛樂城擁有最豐富的遊戲種類。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-1">
+                <div class="row py-3  CardBgMd-txt">
+                  <div class="col-12 centerCenter">
+                    <img src="./img/桌機index_img/Quality2.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-12 centerCenter ">
+                    <p class="text-theme font-weight-bold text-center">加密安全管理</p>
+                    <p class=" text-center">獨家開發加密技術，資料保障最完善。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-1">
+                <div class="row py-3  CardBgMd-txt">
+                  <div class="col-12 centerCenter">
+                    <img src="./img/桌機index_img/Quality3.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-12 centerCenter ">
+                    <p class="text-theme font-weight-bold text-center">支持所有行動設備</p>
+                    <p class=" text-center">不管使用任何設備，娛樂投注隨心所欲！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-theme font_b h5 p-2">最新消息</p>
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="text-theme font_b col-12 py-1" style="line-height: 1.2rem;">娛樂城反水是什麼、有哪些種類？娛樂城獎勵一次看！</p>
+              <p class="col-12 text-secondary">
+                2022-03-03 14:00:00
+              </p>
+              <p class="col-12">
+                娛樂城經常向他們的玩家提供娛樂城反水，以鼓勵他們繼續在那裡博弈、或是獎勵他們的忠誠度...
+              </p>
+              <button class="col-12 btn">
+                <p class="text-secondary">更多詳情>></p>
+              </button>
+            </div>
+            <div class="CardBgMd font-weight-bold py-2 row">
+              <p class="text-theme font_b col-12 py-1" style="line-height: 1.2rem;">娛樂城反水是什麼、有哪些種類？娛樂城獎勵一次看！</p>
+              <p class="col-12 text-secondary">
+                2022-03-03 14:00:00
+              </p>
+              <p class="col-12">
+                娛樂城經常向他們的玩家提供娛樂城反水，以鼓勵他們繼續在那裡博弈、或是獎勵他們的忠誠度...
+              </p>
+              <button class="col-12 btn">
+                <p class="text-secondary">更多詳情>></p>
+              </button>
+            </div>
+            <div class="col-12 p-0 text-center">
+              <a href="./page/Blog.html" class="btn my-1 px-5 py-1 button_index_Md centerCenter">
+                <p class="font_b text-light">看更多</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pt-2">
+          <h5 class="modal-title text-theme font-weight-bold h5" id="exampleModalLongTitle">快速轉帳
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fa-regular fa-circle-xmark fa-lg"></i></span>
+          </button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="row px-3">
+            <div class="col-5 px-2">
+              <div class="bg-theme rounded centerCenter py-3 uk-position-relative">
+                <p class="centerCenter">主錢包</p>
+                <p class="centerCenter text-theme font-weight-bold">$0.00</p>
+                <div class=" uk-position-absolute uk-position-bottom-center bg-light" style="top: 70px;">
+                  <button type="button"
+                    class="btn bd-theme font-weight-bold text-theme rounded rounded-pill fsz09 py-0 px-3 btn-block">一鍵回收</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 px-0 my-auto">
+              <img src="./img/手機index_img/arrow.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-5 px-2">
+              <div class="bg-theme2 rounded centerCenter py-3">
+                <p class="centerCenter">DG真人</p>
+                <p class="centerCenter text-theme font-weight-bold">$0.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 bg-theme">
+          <div class="col-12 input-group mb-3">
+            <input type="text" class="form-control  bd-theme fsz-08" placeholder="請輸入轉帳金額"
+              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text bd-theme bg-theme3 py-0 px-3 text-light" id="basic-addon2">
+                全部</span>
+            </div>
+          </div>
+          <div class="row w-100">
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">100</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">500</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">1000</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-3 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">5000</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">10000</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">20000</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">30000</button>
+            </div>
+            <div class="col-3 p-1 centerCenter">
+              <button
+                class="btn py-1 px-2 font-weight-bold  bg-transparent bd-theme text-theme rounded-pill">50000</button>
+            </div>
+          </div>
+          <div class="row w-100">
+            <div class="col-6 p-1 text-center">
+              <button class="btn bg-theme3 text-light btn-block">立即轉帳</button>
+            </div>
+            <div class="col-6 p-1 text-center">
+              <button class="btn bg-theme3 text-light btn-block">進入遊戲</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer ------------------------------------------------------------------------>
+  <!-- 電腦版 -->
+  <div class="container-fluid p-0 m-0 d-none d-md-block" style="background-color: #3D445E;">
+    <div class="container px-5">
+      <div class="row py-3 px-5">
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/1.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/2.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/3.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/4.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/5.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/6.png" alt="">
+        </div>
+        <div class="col px-0 text-center"><img class="img-fluid" src="./img/桌機index_img/footer/7.png" alt="">
+        </div>
+      </div>
+      <div class="row m-0">
+        <div class="col-12">
+          <p class="text-center txt_secondary">博天堂918擁有歐洲政府（MGA）和菲律賓政府（PAGCOR）頒發的合法執照。</p>
+          <p class="text-center txt_secondary">註冊於英屬維爾京群島，是受國際行業協會認可的合法公司。進行註冊娛樂前，請確保您滿18歲！</p>
+        </div>
+        <div class="col-12" id="breadcrumb1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center p-0 mb-0 pt-2">
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="#">Home</a>
+              </li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./page/MyPurse.html">幫助中心</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./page/MyPurse.html">邀請好友</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./page/gameIntroduction.html">APP下載</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./header page/3FAQ.html">常見問題</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="#">合營代理</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./index.html">娛樂城</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./index.html">百家樂</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./page/gameIntroduction.html">遊戲介紹</a></li>
+              <li class="breadcrumb-item fsz-06"><a class="text-decoration-none p-0 w3-hover-text-light-gray"
+                  href="./page/Blog.html">娛樂城文章分享</a></li>
+          </nav>
+        </div>
+      </div>
+
+
+    </div>
+    <blockquote class="blockquote py-3 m-0">
+      <footer class="blockquote-footer centerCenter">版權所有 ©2020-2025 博天堂918 保留所有權</footer>
+    </blockquote>
+  </div>
+
+  <!-- 手機版 fixed bottom -->
+  <div id="indexFooterBtnItemBG" class="m-0 p-0 container-fluid d-none vh-100 fixed-bottom"
+    style="background-color: #000;opacity: .5;"></div>
+  <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom bg-gradient-theme">
+    <div class="container m-0 p-0 centerCenter">
+      <div class="row m-0 p-0 py-1 d-none" id="indexFooterBtnItem">
+        <a class="col" href="./page/MyPurse.html">
+          <img src="./img/手機index_img/bottomList/Frame 620.png" class="img-fluid" alt="">
+        </a>
+        <a class="col" href="./page/MyPurse.html">
+          <img src="./img/手機index_img/bottomList/Frame 621.png" class="img-fluid" alt="">
+        </a>
+        <a class="col" href="./page/MyPurse.html">
+          <img src="./img/手機index_img/bottomList/Frame 622.png" class="img-fluid" alt="">
+        </a>
+      </div>
+      <div class="row px-0 py-1 m-0">
+        <div class="col centerCenter px-0 card_c">
+          <a href="./index.html">
+            <img src="./img/手機index_img/bottomList/bottomList1.png" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+          <a href="./page/Promotion.html">
+            <img src="./img/手機index_img/bottomList/bottomList2.png" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+          <div id="indexFooterBtn" class="centerCenter">
+            <img src="./img/手機index_img/bottomList/bottomList3.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+          <a href="./page/CustomerService.html">
+            <img src="./img/手機index_img/bottomList/bottomList4.png" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+          <a href="./page/MyPurse.html">
+            <img src="./img/手機index_img/bottomList/bottomList5.png" class="img-fluid" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 右側中 -->
+  <div class="uk-position-fixed uk-position-center-right btn-fixed d-none d-md-block"
+    style="width: 5rem; height: auto;margin-top: -50px;z-index: 99999999999;">
+    <button type="button" class="uk-button bg-transparent  centerCenter px-0 py-1" data-toggle="modal"
+      data-target="#exampleModalCenter2">
+      <img src="./img/桌機index_img/0service.png" class="img-fluid" alt="">
+    </button>
+    <a href="./page/MyPurse.html" class="uk-button bg-transparent  centerCenter px-0 py-1">
+      <img src="./img/桌機index_img/2help.png" class="img-fluid" alt="">
+    </a>
+    <a href="./header page/3FAQ.html" class="uk-button bg-transparent  centerCenter px-0 py-1">
+      <img src="./img/桌機index_img/1announcement.png" class="img-fluid" alt="">
+    </a>
+  </div>
+
+
+  <!-- back-to-top -->
+  <button id="back-to-top"
+    class="btn uk-position-fixed uk-position-bottom-right centerCenter bg-theme3 d-none d-md-block rounded-circle btn-fixed"
+    style="height: 2.8rem;width: 2.8rem;right: 2.5%;">
+    <i class="fas fa-angle-up w3-xlarge text-light"></i>
+  </button>
+
+
+  <script>
+    $(document).ready(function () {
+      let footerHCopy = $("#footerHCopy").height();
+      $('.footerHCopy').height(footerHCopy);
+
+    });
+  </script>
+
+  <!-- 滾動選軸 -->
+  <script>
+    $(document).ready(function () {
+
+
+      $("#arrowDownList").hide();
+      // 最上方隱藏
+      $("#arrowDown").click(function () {
+        $("#arrowDownList").show();
+      });
+      // $("#back-to-top").hide();
+      // 顯示
+      // $(window).scroll(function () {
+      //     if ($(window).scrollTop() > 100) {
+      //         $("#back-to-top").fadeIn(1000);
+      //     } else {
+      //         $("#back-to-top").fadeOut(1500);
+      //     }
+      // });
+      // 滾動
+      $("#back-to-top").click(function () {
+        // 捲動最上面
+        $('body,html').animate({ scrollTop: 0 }, 1000);
+        // 捲動固定ID
+        // $('body,html').animate({ scrollTop: $('#axc').offset().top }, 1000);
+        return false;
+      });
+
+      $('.card_c').click(
+        function () {
+          $(this).siblings().addClass('uk-blend-luminosity');
+          $(this).removeClass('uk-blend-luminosity');
+        }
+
+      )
+
+      $('#dropdown_menu').hide();
+      $(".dropdown_menu").click(function () {
+        $('#dropdown_menu').toggle();
+      });
+      $('body').click(function () {
+        $('#dropdown_menu').hide();
+
+      });
+    });
+  </script>
+  <script src="./js/gameList.js"></script>
+  <script src="./js/MDgameList.js"></script>
+  <script src="./js/progress.js"></script>
+  <script src="./js/hoverList.js"></script>
+  <script src="./js/indexFooterBtn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.uk-subnav-pill > .uk-active > a {
+  background-color: #365a97 !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+.uk-subnav-pill > a {
+  background-color: #365a97 !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+@media screen and (max-width: 768px) {
+  .uk-subnav-pill > .uk-active > a {
+    background-color: transparent !important;
+    color: #365a97 !important;
+    font-weight: bold !important;
+  }
+}
