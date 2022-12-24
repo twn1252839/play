@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" style="font-family: 'Microsoft YaHei', sans-serif;">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- IE兼容 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- WOW CSS -->
+  <!-- <link rel="stylesheet" href="./css/animation.css"> -->
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- favicon -->
+  <!-- <link rel="icon" href="./img/favicon1.ico"> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- w3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- UK CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+  <!-- UK JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <!-- <script src="./js/Addhtml.js"></script> -->
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index-main.css">
+  <link rel="stylesheet" href="./css/progress.css">
+  <link rel="stylesheet" href="./css/section5Index.css">
+  <link rel="stylesheet" href="./css/scrollbar.css">
+
+  <!-- vue -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+
+  <title>Boheaven</title>
+  <style>
+    /* switch 調整 */
+    .uk-subnav-pill>.uk-active>a {
+      background-color: transparent !important;
+      color: #365a97 !important;
+      font-weight: bold;
+    }
+
+    .uk-accordion-title::before {
+      display: none;
+      /* content: "";
+              width: 1.4em;
+              height: 1.4em;
+              margin-left: 10px;
+              float: right;
+              color: #fff !important;
+              background-image: none;
+              background-repeat: no-repeat;
+              background-position: 50% 50%; */
+    }
+
+
+    /* 強制單頁控制UK SWITCH */
+    /* 啟動背景 */
+    .uk-accordion-title:focus,
+    .uk-accordion-title:hover {
+      color: #00ffff;
+      text-decoration: none;
+      outline: 0;
+      background: none !important;
+      background-color: transparent !important;
+    }
+
+    /* 未啟動背景 */
+    .uk-accordion-title {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: #fff;
+      overflow: hidden;
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      /* border-radius: 8px; */
+    }
+
+    /* body控制 */
+    .tableTittleItem {
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      border-radius: 8px;
+      color: #fff;
+
+    }
+
+    /* 強制單頁控制UK SWITCH END ---------------- */
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- index 壞掉的 header -->
+  <div class="row py-1" style="align-items: center;">
+    <!-- LOGO -->
+    <div class="col-3 px-0 text-center">
+      <div class="text-center">
+        <a class="pl-3" href="./index.html">
+          <img src="./img/手機index_img/logo.png" alt="" class="img-fluid">
+        </a>
+      </div>
+    </div>
+    <!-- 登入 -->
+    <div class="col-6 p-0 col-md-5 text-right">
+      <!-- 自製dropdown -->
+      <span class="p-0 uk-inline clearfix bg-transparent text-light">
+        <div class="row m-0 p-0 text-right">
+          <div class="col m-0 p-0 text-right">
+            <span class="fsz-06">白銀VIP</span>
+          </div>
+          <div class="col m-0 p-0 text-right">
+            <span class="fsz-06">TEST9998</span>
+            <span class="fsz-06" style="padding-top: -25px; margin-top: -25px;">$3,000</span>
+          </div>
+          <button class="col-2 uk-button bg-transparent tr m-0 p-0 text-right" type=" button">
+            <img src="./img/手機index_img/down.png" alt="" class="img-fluid fa-solid fa-angle-down pl-2 pt-1">
+          </button>
+        </div>
+      </span>
+      <!-- UK_dropdown -->
+      <div uk-dropdown="mode: click" class="py-1 px-3 m-0 pb-3 arrow_up"
+        style="background-color: rgba(0, 0, 0, 0.8);width: 60vw;">
+        <style>
+          .arrow_up:before {
+            border-bottom: .5rem solid rgba(0, 0, 0, .8);
+            border-left: .35rem solid transparent;
+            border-right: .35rem solid transparent;
+            content: "";
+            position: absolute;
+            right: 1.5rem;
+            top: -.5rem;
+          }
+        </style>
+        <!-- 修改 -->
+        <div class=" py-3" style="height: 250px;overflow-y: scroll;overflow-x: hidden;">
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">WM真人</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">DG真人</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">歐博真人</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">沙龍真人</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">ZG電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">BNG電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">皇家電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">轉轉樂</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">大立彩票</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">贏家彩票</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">協和體育</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">Super體育</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">必赢電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">AE電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+          <div class="row px-3 py-1 text-light border-bottom border-secondary">
+            <div class="col px-0 border-right border-secondary py-0">DG電子</div>
+            <div class="col pl-2 text-theme1">0</div>
+          </div>
+        </div>
+        <div class="row pt-3 border-top border-secondary">
+          <div class="col text-right pl-2">
+            <span class="text-light">總額度:</span>
+            <span class="text-theme5">3,000</span>
+          </div>
+        </div>
+        <button class="uk-button bg_gradient_theme font-weight-bold rounded rounded-pill py-0 btn-block text-light"
+          style="text-shadow: 0.1em 0.1em #333">
+          全部轉回主帳戶
+        </button>
+      </div>
+    </div>
+
+    <!-- 24HR客服 -->
+    <div class="col-2 col-md-1 px-0 m-0 uk-position-relative centerCenter">
+      <a href="./index.html" class="text-right">
+        <img id="hrServiceBtn" src="./img/手機index_img/out.png" alt="" class="img-fluid" data-toggle="modal"
+          data-target="#exampleModal">
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
