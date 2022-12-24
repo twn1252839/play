@@ -449,59 +449,6 @@ a {
   border: transparent !important;
 }
 
-.filter_a {
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
-}
-/*  */
-
-.filter_darken {
-  mix-blend-mode: darken;
-}
-.filter_multiply {
-  mix-blend-mode: multiply;
-}
-.filter_color_burn {
-  mix-blend-mode: color-burn;
-}
-/*  */
-.filter_lighten {
-  mix-blend-mode: lighten;
-}
-.filter_screen {
-  mix-blend-mode: screen;
-}
-.filter_color_dodge {
-  mix-blend-mode: color-dodge;
-}
-.filter_luminosity {
-  mix-blend-mode: luminosity;
-}
-/*  */
-.filter_color {
-  mix-blend-mode: color;
-}
-.filter_difference {
-  mix-blend-mode: difference;
-}
-.filter_exclusion {
-  mix-blend-mode: exclusion;
-}
-.filter_hard_light {
-  mix-blend-mode: hard-light;
-}
-.filter_hue {
-  mix-blend-mode: hue;
-}
-.filter_overlay {
-  mix-blend-mode: overlay;
-}
-.filter_saturation {
-  mix-blend-mode: saturation;
-}
-.filter_soft_light {
-  mix-blend-mode: soft-light;
-}
-
 .game_cardwrap {
   min-height: 31rem;
   background: url(../img/桌機index_img/GAME/gameList/stage.png) no-repeat bottom;
@@ -579,4 +526,30 @@ a {
 .table_set {
   height: 500px;
   overflow-y: scroll;
+}
+
+/* add -------------------------------------------------------- */
+.input_login::placeholder {
+  font-weight: bold;
+  opacity: 0.8;
+  color: #ffffff;
+  padding-top: 1.5%;
+}
+
+.form-control-h .form-control {
+  height: calc(1.5em + 0.5rem) !important;
+}
+
+.form-control-h input[type="checkbox"] {
+  display: inline-block;
+  background-color: #aaa;
+  padding: 3px 6px;
+  border: 1px solid gray;
+  color: #444;
+  user-select: none; /* 防止文字被滑鼠選取反白 */
+}
+
+.form-control-h input[type="checkbox"]:checked {
+  color: yellow;
+  background-color: #003b39;
 }

@@ -328,6 +328,59 @@ p {
   color: #fff !important;
 }
 
+/*  */
+.filter_a {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.filter_darken {
+  mix-blend-mode: darken;
+}
+.filter_multiply {
+  mix-blend-mode: multiply;
+}
+.filter_color_burn {
+  mix-blend-mode: color-burn;
+}
+/*  */
+.filter_lighten {
+  mix-blend-mode: lighten;
+}
+.filter_screen {
+  mix-blend-mode: screen;
+}
+.filter_color_dodge {
+  mix-blend-mode: color-dodge;
+}
+.filter_luminosity {
+  mix-blend-mode: luminosity;
+}
+/*  */
+.filter_color {
+  mix-blend-mode: color;
+}
+.filter_difference {
+  mix-blend-mode: difference;
+}
+.filter_exclusion {
+  mix-blend-mode: exclusion;
+}
+.filter_hard_light {
+  mix-blend-mode: hard-light;
+}
+.filter_hue {
+  mix-blend-mode: hue;
+}
+.filter_overlay {
+  mix-blend-mode: overlay;
+}
+.filter_saturation {
+  mix-blend-mode: saturation;
+}
+.filter_soft_light {
+  mix-blend-mode: soft-light;
+}
+
 /* index -------------------------------------------------------- */
 
 .bgc-header-color {
@@ -378,4 +431,8 @@ p {
 
 .py_2_5 {
   padding: 0.75rem 0 !important;
+}
+
+.outline_none {
+  outline: none;
 }
