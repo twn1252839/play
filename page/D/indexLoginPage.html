@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
 
-  <title>24H客服</title>
+  <title>24H克服</title>
   <style>
 
   </style>
@@ -41,19 +41,35 @@
 
 
 <body>
+  <!-- Header -->
+  <script>
+    PageHeader();
+  // PageHeaderBanner()
+  </script>
+
   <div class="container-fluid p0 m-0 min-vh-100"
     style="background: url(../img/手機index_img/bg.png) top center;background-size: cover;">
     <div class="container pb-3 px-0">
-
-      <!-- Header -->
+      <!-- MD history.back ------------------------------------------------------------------------>
+      <div class="d-md-none w-100 py-1">
+        <nav aria-label="breadcrumb">
+          <ul class="d-flex py-0 py-sm-1">
+            <button class="btn py-2" type="button" onclick="history.back()" value="回到上一頁">
+              <i class="fas fa-angle-left text-light fa-lg"></i>
+            </button>
+            <p class="text-light text-monospace col-12 centerCenter fixed-top" style="font-size: 2rem;">24H克服</p>
+          </ul>
+        </nav>
+      </div>
       <script>
-        PageHeader();
-        // PageHeaderBanner()
+        $(document).ready(function () {
+          let title = $('title').text();
+          $('#copyTitle').html(title);
+        });
       </script>
-
       <!-- PC ------------------------------------------------------------------------>
       <div class="row m-0 p-0">
-        <div class="col-12 m-0 p-0 pt-3">
+        <div class="col-12 m-0 p-0 pt-5">
           <img class="img-fluid" src="../img/手機index_img/24H/1.png" alt="">
         </div>
       </div>
@@ -93,9 +109,6 @@
     </div>
   </div>
 
-  <!-- 修改 -->
-
-  <!-- 修改 -->
   <!-- Footer -->
   <script>
     PCFooter();
