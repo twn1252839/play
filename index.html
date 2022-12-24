@@ -52,53 +52,62 @@
 
   <title>Boheaven</title>
   <style>
-    .titleChange {
-      font-size: 18px;
+    /* switch 調整 */
+    .uk-subnav-pill>.uk-active>a {
+      background-color: transparent !important;
+      color: #365a97 !important;
+      font-weight: bold;
     }
 
-    @media(min-width: 996px) {
+    .uk-accordion-title::before {
+      display: none;
+      /* content: "";
+              width: 1.4em;
+              height: 1.4em;
+              margin-left: 10px;
+              float: right;
+              color: #fff !important;
+              background-image: none;
+              background-repeat: no-repeat;
+              background-position: 50% 50%; */
+    }
 
-      address,
-      dl,
-      fieldset,
-      figure,
-      ol,
-      p,
-      pre,
-      ul {
-        margin: 0 0 50px 0;
-      }
 
-      .titleChange {
-        font-size: 24px;
-      }
+    /* 強制單頁控制UK SWITCH */
+    /* 啟動背景 */
+    .uk-accordion-title:focus,
+    .uk-accordion-title:hover {
+      color: #00ffff;
+      text-decoration: none;
+      outline: 0;
+      background: none !important;
+      background-color: transparent !important;
+    }
+
+    /* 未啟動背景 */
+    .uk-accordion-title {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.4;
+      color: #fff;
+      overflow: hidden;
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      /* border-radius: 8px; */
+    }
+
+    /* body控制 */
+    .tableTittleItem {
+      background-color: transparent !important;
+      border: transparent !important;
+      filter: none !important;
+      border-radius: 8px;
+      color: #fff;
 
     }
 
-    .uk-tab>.uk-active>a {
-      /* color: #fff;
-            border-color: #bc985e;
-            background-color: #bc985e; */
-      /* filter: blur(0); */
-    }
-
-    /* .uk-tab>*>a {
-            color: #bc985e;
-            font-size: 1.2rem;
-        } */
-
-    /* .uk-tab>*>a:hover {
-            background-color: #bc985e;
-            color: #fff;
-        } */
-
-    .card {
-      border: 0px solid;
-    }
-
-    .hoverListIItem .col {
-      cursor: pointer;
-    }
+    /* 強制單頁控制UK SWITCH END ---------------- */
   </style>
 </head>
 
@@ -269,7 +278,7 @@
             <img src="./img/手機index_img/banner.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./img/手機index_img/banner1.png" class="d-block w-100" alt="...">
+            <img src="./img/手機index_img/banner.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -288,7 +297,10 @@
     <div class="container-fluid p-0 m-0 d-md-none" style="background:url(./img/手機index_img/marqueeBG1.png) 100%;">
       <div class="row p-0 m-0">
         <div class="marquee_s " style="padding-top: 0.1em;">
-          <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
+          <button type="button" class="uk-button bg-transparent  centerCenter px-0 py-1" data-toggle="modal"
+            data-target="#exampleModalCenter2">
+            <img src="./img/手機index_img/marqueeA.png" class="img-fluid" alt="">
+          </button>
         </div>
         <div class="marquee_b centerCenter">
           <marquee direction="left" height="30" scrollamount="6" behavior="left" class="text-theme1 h-100 pt-1"
@@ -296,124 +308,93 @@
             最新消息跑馬燈的部分會在這裡呈現!!!!! !!!!最新消息跑馬燈的部分會在這裡
           </marquee>
         </div>
-        <!-- <div class="text-center marquee_s" style="padding-top: 0.1em;">
-            <a href="./header page/3FAQ.html"><input class="btn py-0 px-3 rounded-pill
-     text-center font-weight-bold text-light fsz-08"
-                style="background: linear-gradient(180deg, #57D7FF 0%, #1E50A6 100%);height: 65%;" type="submit"
-                value="更多"></a>
-          </div> -->
       </div>
     </div>
 
     <!-- 遊戲廳 MOD -->
     <div class="container-fluid p-0 d-md-none">
       <div class="container p-0">
-        <div class="row m-0 p-0">
+        <div class="row m-0 p-0 pt-1">
           <div class="col m-0 p-0">
-            <button type="button" class="uk-button bg-transparent p-0 filter_lighten">
+            <a class="uk-button bg-transparent p-0 px-1 filter_lighten" href="#">
               <img src="./img/手機index_img/VD.png" alt="" class="img-fluid">
-            </button>
+            </a>
           </div>
           <div class="col m-0 p-0">
-            <button type="button" class="uk-button bg-transparent p-0 filter_lighten">
+            <a class="uk-button bg-transparent p-0 px-1 filter_lighten" href="#">
               <img src="./img/手機index_img/MV.png" alt="" class="img-fluid">
-            </button>
+            </a>
           </div>
         </div>
-        <div class="row justify-content-center pt-2 px-0 m-0">
+        <div class="row justify-content-center pt-2 pb-5 px-0 m-0">
           <ul class="uk-subnav col-3 flex-column px-0 mx-auto list-unstyled" uk-switcher>
             <!-- ./img/手機index_img/game1active.png -->
-            <li class="p-0 MDgameList1">
-              <a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList1"><a href="#" class="py-2 px-0 filter_screen">
                 <img class="img-fluid" src="./img/手機index_img/game/MDgameList/List1.png" alt="">
               </a>
             </li>
-            <li class="p-0 MDgameList2"><a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList2"><a href="#" class="py-2 px-0 filter_screen">
                 <img src="./img/手機index_img/game/MDgameList/2.png" alt="">
               </a>
             </li>
-            <li class="p-0 MDgameList3"><a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList3"><a href="#" class="py-2 px-0 filter_screen">
                 <img src="./img/手機index_img/game/MDgameList/3.png" alt="">
-
               </a>
             </li>
-            <li class="p-0 MDgameList4"><a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList4"><a href="#" class="py-2 px-0 filter_screen">
                 <img src="./img/手機index_img/game/MDgameList/4.png" alt="">
-
               </a>
             </li>
-            <li class="p-0 MDgameList5"><a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList5"><a href="#" class="py-2 px-0 filter_screen">
                 <img src="./img/手機index_img/game/MDgameList/5.png" alt="">
-
               </a>
             </li>
-            <li class="p-0 MDgameList6"><a href="#" class="py-3 px-0 filter_screen">
+            <li class="p-0 MDgameList6"><a href="#" class="py-2 px-0 filter_screen">
                 <img src="./img/手機index_img/game/MDgameList/6.png" alt="">
-
+              </a>
+            </li>
+            <li class="p-0 MDgameList7"><a href="#" class="py-2 px-0 filter_screen">
+                <img src="./img/手機index_img/game/MDgameList/7.png" alt="">
+              </a>
+            </li>
+            <li class="p-0 MDgameList8"><a href="#" class="py-2 px-0 filter_screen">
+                <img src="./img/手機index_img/game/MDgameList/8.png" alt="">
+              </a>
+            </li>
+            <li class="p-0 MDgameList8"><a href="#" class="py-2 px-0 filter_screen">
+                <img src="./img/手機index_img/game/MDgameList/8.png" alt="">
+              </a>
+            </li>
+            <li class="p-0 MDgameList8"><a href="#" class="py-2 px-0 filter_screen">
+                <img src="./img/手機index_img/game/MDgameList/8.png" alt="">
+              </a>
+            </li>
+            <li class="p-0 MDgameList8"><a href="#" class="py-2 px-0 filter_screen">
+                <img src="./img/手機index_img/game/MDgameList/8.png" alt="">
               </a>
             </li>
           </ul>
 
           <ul class="uk-switcher col-9 px-0">
-            <!-- 百家樂 -->
-            <li class="uk-active">
-              <div class="row m-0 p-0">
-                <div class="filter_a col-12 col-md-3 p-2 centerCenter text-center">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName filter_soft_light"
-                    data-toggle="modal" data-target="#exampleModalCenter" value="WM真人">
-                    <img src="./img/手機index_img/game/baccarat/baccarat_DG.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-                <div class="filter_a col-12 col-md-3 p-2 centerCenter text-center">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="SA真人">
-                    <img src="./img/手機index_img/game/baccarat/baccarat__WM.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-                <div class="filter_a col-6 col-md-3 p-2 centerCenter text-center">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="歐博真人">
-                    <img src="./img/手機index_img/game/baccarat/baccarat_SA.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-                <div class="filter_a col-6 col-md-3 p-2 centerCenter text-center">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="SA真人">
-                    <img src="./img/手機index_img/game/baccarat/baccarat_Ober.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-              </div>
-            </li>
-            <!-- 體育 -->
+            <!-- 熱門 -->
             <li>
               <div class="row m-0">
-                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="SUPER體育">
-                    <img src="./img/手機index_img/game/sport/sport1.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="博天堂體育">
-                    <img src="./img/手機index_img/game/sport/sport2.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-              </div>
-            </li>
-            <!-- 賓果 -->
-            <li>
-              <div class="row m-0">
-                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter py-1">
                   <button type="button" class="uk-button bg-transparent p-0 imgName " data-toggle="modal"
                     data-target="#exampleModalCenter" value="SUPER彩票">
-                    <img src="./img/手機index_img/game/bingo/bingo1.png" alt="" class="img-fluid">
+                    <img src="./img/手機index_img/game/popular/popular1.png" alt="" class="img-fluid">
                   </button>
                 </div>
-                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter py-1">
                   <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
                     data-target="#exampleModalCenter" value="9K彩票">
-                    <img src="./img/手機index_img/game/bingo/bingo2.png" alt="" class="img-fluid">
+                    <img src="./img/手機index_img/game/popular/popular2.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter py-1">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="9K彩票">
+                    <img src="./img/手機index_img/game/popular/popular3.png" alt="" class="img-fluid">
                   </button>
                 </div>
               </div>
@@ -455,6 +436,58 @@
 
               </div>
             </li>
+            <!-- 賓果 -->
+            <li>
+              <div class="row m-0">
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName " data-toggle="modal"
+                    data-target="#exampleModalCenter" value="SUPER彩票">
+                    <img src="./img/手機index_img/game/bingo/bingo1.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="9K彩票">
+                    <img src="./img/手機index_img/game/bingo/bingo2.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-12 col-md-3 px-0 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="9K彩票">
+                    <img src="./img/手機index_img/game/bingo/bingo3.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- 百家樂 -->
+            <li class="uk-active">
+              <div class="row m-0 p-0">
+                <div class="filter_a col-12 col-md-3 p-1 centerCenter text-center">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName filter_soft_light"
+                    data-toggle="modal" data-target="#exampleModalCenter" value="WM真人">
+                    <img src="./img/手機index_img/game/baccarat/baccarat_DG.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-12 col-md-3 p-1 centerCenter text-center">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="SA真人">
+                    <img src="./img/手機index_img/game/baccarat/baccarat__WM.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-6 col-md-3 p-2 centerCenter text-center">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="歐博真人">
+                    <img src="./img/手機index_img/game/baccarat/baccarat_SA.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-6 col-md-3 p-2 centerCenter text-center">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="SA真人">
+                    <img src="./img/手機index_img/game/baccarat/baccarat_Ober.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+              </div>
+            </li>
             <!-- 棋牌 -->
             <li>
               <div class="row m-0">
@@ -462,12 +495,6 @@
                   <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
                     data-target="#exampleModalCenter" value="博樂棋牌">
                     <img src="./img/手機index_img/game/card/card1.png" alt="" class="img-fluid">
-                  </button>
-                </div>
-                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
-                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
-                    data-target="#exampleModalCenter" value="OB棋牌">
-                    <img src="./img/手機index_img/game/card/card2.png" alt="" class="img-fluid">
                   </button>
                 </div>
               </div>
@@ -487,6 +514,29 @@
                     <img src="./img/手機index_img/game/fish/fish2.png" alt="" class="img-fluid">
                   </button>
                 </div>
+                <div class="filter_a col-12 col-md-3 px-0 py-1 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="必贏捕魚">
+                    <img src="./img/手機index_img/game/fish/fish3.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+              </div>
+            </li>
+            <!-- 體育 -->
+            <li>
+              <div class="row m-0">
+                <div class="filter_a col-12 col-md-3 p-1 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="SUPER體育">
+                    <img src="./img/手機index_img/game/sport/sport1.png" alt="" class="img-fluid">
+                  </button>
+                </div>
+                <div class="filter_a col-12 col-md-3 p-1 centerCenter">
+                  <button type="button" class="uk-button bg-transparent p-0 imgName" data-toggle="modal"
+                    data-target="#exampleModalCenter" value="博天堂體育">
+                    <img src="./img/手機index_img/game/sport/sport2.png" alt="" class="img-fluid">
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
@@ -494,8 +544,6 @@
       </div>
     </div>
   </div>
-
-
 
   <!-- footer ------------------------------------------------------------------------>
   <!-- 電腦版 -->
@@ -560,9 +608,10 @@
   <!-- 手機版 fixed bottom -->
   <div id="indexFooterBtnItemBG" class="m-0 p-0 container-fluid d-none vh-100 fixed-bottom"
     style="background-color: #000;opacity: .5;"></div>
-  <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom bg-gradient-theme">
+  <div id="footerHCopy" class="container-fluid d-md-none p-0 m-0 fixed-bottom  bgc-flex-v bg-transparent"
+    style="background-image: url(./img/手機index_img/bgb1.png);">
     <div class="container m-0 p-0 centerCenter">
-      <div class="row m-0 p-0 py-1 d-none" id="indexFooterBtnItem">
+      <!-- <div class="row m-0 p-0 py-1 d-none" id="indexFooterBtnItem">
         <a class="col" href="./page/deposit.html">
           <img src="./img/手機index_img/bottomList/Frame 620.png" class="img-fluid" alt="">
         </a>
@@ -572,31 +621,31 @@
         <a class="col" href="./page/PlatformTransfer.html">
           <img src="./img/手機index_img/bottomList/Frame 622.png" class="img-fluid" alt="">
         </a>
-      </div>
+      </div> -->
       <div class="row px-0 py-1 m-0">
         <div class="col centerCenter px-0 card_c">
-          <a href="./index.html">
-            <img src="./img/手機index_img/bottomList/bottomList1.png" class="img-fluid" alt="">
+          <a href="./page/24H.html">
+            <img src="./img/手機index_img/b4.png" class="img-fluid" alt="">
           </a>
         </div>
-        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+        <div class="col centerCenter px-0 card_c">
           <a href="./page/Promotion.html">
-            <img src="./img/手機index_img/bottomList/bottomList2.png" class="img-fluid" alt="">
+            <img src="./img/手機index_img/b3.png" class="img-fluid" alt="">
           </a>
         </div>
-        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
-          <div id="indexFooterBtn" class="centerCenter">
-            <img src="./img/手機index_img/bottomList/bottomList3.png" class="img-fluid" alt="">
-          </div>
+        <div class="col centerCenter px-0 card_c" style="z-index: 99; margin-top: -45px;">
+          <a href="./page/Promotion.html">
+            <img src="./img/手機index_img/b5.png" class="img-fluid" alt="">
+          </a>
         </div>
-        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+        <div class="col centerCenter px-0 card_c">
           <a href="./page/CustomerService.html">
-            <img src="./img/手機index_img/bottomList/bottomList4.png" class="img-fluid" alt="">
+            <img src="./img/手機index_img/b2.png" class="img-fluid" alt="">
           </a>
         </div>
-        <div class="col centerCenter px-0 card_c uk-blend-luminosity">
+        <div class="col centerCenter px-0 card_c">
           <a href="./page/MyPurse.html">
-            <img src="./img/手機index_img/bottomList/bottomList5.png" class="img-fluid" alt="">
+            <img src="./img/手機index_img/b1.png" class="img-fluid" alt="">
           </a>
         </div>
       </div>
@@ -622,36 +671,70 @@
   <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
+      <div class="modal-content bgc-flex-v bg-transparent"
+        style="background-image: url(./img/手機index_img/announcement/announcementBg.png);">
         <div class="modal-header border-0">
-          <h5 class="modal-title h5 text-theme font-weight-bold" id="exampleModalLongTitle">聯絡我們
-          </h5>
+          <p class="modal-title uk-h3 text-theme1 font-weight-bold centerCenter pt-2 pl-5" id="exampleModalLongTitle">
+            最新公告
+          </p>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fa-solid fa-xmark text-theme fa-lg"></i></span>
+            <span aria-hidden="true"><i class="fa-regular fa-circle-xmark text-theme1 fa-lg"></i></span>
           </button>
         </div>
         <div class="modal-body pt-0">
-          <!-- 雙直btn -->
-          <div class=" py-2">
-            <a type="button" class="uk-button bg-transparent p-0">
-              <img src="./img/桌機index_img/Frame 554.png" class="img-fluid" alt="...">
-            </a>
-          </div>
-          <div class=" py-2">
-            <a type="button" class="uk-button bg-transparent p-0">
-              <img src="./img/桌機index_img/Frame 555.png" class="img-fluid" alt="...">
-            </a>
-          </div>
-          <div class=" py-2">
-            <a href="./page/Feedback.html" class="uk-button bg-transparent p-0">
-              <img src="./img/桌機index_img/Frame 556.png" class="img-fluid" alt="...">
-            </a>
-          </div>
+          <!--  -->
+          <ul uk-accordion="" class="uk-accordion">
+            <li class="border-bottom border-secondary">
+              <a class="uk-accordion-title p-0 fsz09 clearfix" href="#">
+                <img class="img-fluid" src="./img/手機index_img/announcement/1.png" alt="">
+                <span>【首儲優惠大禮包】</span>
+                <span class="float-right pt-2">2022-03-25</span>
+              </a>
+              <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                <p class="p-2 fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                  單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                  額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+              </div>
+            </li>
+            <li class="border-bottom border-secondary">
+              <a class="uk-accordion-title p-0 fsz09 clearfix" href="#">
+                <img class="img-fluid" src="./img/手機index_img/announcement/1.png" alt="">
+                <span>【首儲優惠大禮包】</span>
+                <span class="float-right pt-2">2022-03-25</span>
+              </a>
+              <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                <p class="p-2 fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                  單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                  額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+              </div>
+            </li>
+            <li class="">
+              <a class="uk-accordion-title p-0 fsz09 clearfix" href="#">
+                <img class="img-fluid" src="./img/手機index_img/announcement/1.png" alt="">
+                <span>【首儲優惠大禮包】</span>
+                <span class="float-right pt-2">2022-03-25</span>
+              </a>
+              <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                <p class="p-2 fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                  單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                  額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+              </div>
+            </li>
+            <li class="">
+              <a class="uk-accordion-title p-0 fsz09 clearfix" href="#">
+                <img class="img-fluid" src="./img/手機index_img/announcement/1.png" alt="">
+                <span>【首儲優惠大禮包】</span>
+                <span class="float-right pt-2">2022-03-25</span>
+              </a>
+              <div class="uk-accordion-content tableTittleItem m-0" hidden="">
+                <p class="p-2 fsz09">活動時間：12/21至12/27 好禮第一重-首儲儲值禮包：
+                  單筆儲值滿1000即可享額外6%回饋無上限 好禮第二重-首儲洗碼禮包： 洗碼每滿5萬
+                  額外再贈88優惠點數，回饋無上限點擊這裡領取回饋金</p>
+              </div>
+            </li>
+
+          </ul>
         </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
       </div>
     </div>
   </div>
