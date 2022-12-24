@@ -476,6 +476,31 @@ a {
 .filter_luminosity {
   mix-blend-mode: luminosity;
 }
+/*  */
+.filter_color {
+  mix-blend-mode: color;
+}
+.filter_difference {
+  mix-blend-mode: difference;
+}
+.filter_exclusion {
+  mix-blend-mode: exclusion;
+}
+.filter_hard_light {
+  mix-blend-mode: hard-light;
+}
+.filter_hue {
+  mix-blend-mode: hue;
+}
+.filter_overlay {
+  mix-blend-mode: overlay;
+}
+.filter_saturation {
+  mix-blend-mode: saturation;
+}
+.filter_soft_light {
+  mix-blend-mode: soft-light;
+}
 
 .game_cardwrap {
   min-height: 31rem;
