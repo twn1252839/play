@@ -247,11 +247,11 @@ p {
 }
 
 .bg-linear-theme {
-  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
+  background: linear-gradient(180deg, #0071bc, #00ffff 53.65%, #f0f7ff);
 }
 
-.bg-gradient-theme {
-  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+.bg_gradient_theme {
+  background: linear-gradient(180deg, #00ffff 0%, #0071bc 100%);
 }
 
 .bd-theme {
