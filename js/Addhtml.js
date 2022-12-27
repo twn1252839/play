@@ -14,7 +14,7 @@ function PageHeader() {
   );
   document.writeln("            </button>");
   document.writeln(
-    "            <p class='text-light text-monospace col-12 text-center pt-2' style='font-size: 1.5rem;z-index: 2;'"
+    "            <p class='text-light text-monospace col-12 text-center pt-1 font-weight-bold' style='font-size: 1.95rem;z-index: 2;'"
   );
   document.writeln("              id='copyTitle'>");
   document.writeln("            </p>");
