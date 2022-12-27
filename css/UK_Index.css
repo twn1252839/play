@@ -1,6 +1,6 @@
 /* switch 調整 */
 .uk-subnav > .uk-active > a {
-  background-color: #036eb8 !important;
+  background-color: transparent !important;
   color: #fff;
   border-radius: 7%;
   padding-bottom: 3%;
@@ -8,7 +8,6 @@
 }
 
 .uk-subnav > * > :first-child {
-  background-color: #fff !important;
   color: #036eb8;
   border-radius: 7%;
   padding-bottom: 3%;
