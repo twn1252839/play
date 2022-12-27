@@ -228,29 +228,6 @@
   border-radius: 8px;
 }
 
-/* switch 調整 */
-.uk-subnav > .uk-active > a {
-  background-color: #036eb8 !important;
-  color: #fff;
-  border-radius: 7%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-
-.uk-subnav > * > :first-child {
-  background-color: #fff !important;
-  color: #036eb8;
-  border-radius: 7%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-
-  display: block;
-  font-weight: bold;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color;
-}
 /* uk END-------------------- */
 
 .font_b {
