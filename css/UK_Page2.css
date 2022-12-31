@@ -1,0 +1,23 @@
+/* switch 調整 */
+.uk-subnav > .uk-active > a {
+  background-color: #00a199 !important;
+  color: #fff;
+  border-radius: 8%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.uk-subnav > * > :first-child {
+  background-color: #fff !important;
+  color: #000;
+  border: 1px solid;
+  border-radius: 8%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+
+  display: block;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+}

@@ -392,48 +392,6 @@ a {
   margin-right: auto !important;
 }
 
-.text-theme {
-  color: #365a97;
-}
-
-.text-theme1 {
-  color: #00ffff;
-}
-
-.bg-theme {
-  background-color: #00ffff;
-}
-.bg-theme1 {
-  background-color: #0071bc;
-}
-.bg-theme2 {
-  background-color: #003b39;
-}
-.bg-theme3 {
-  background-color: #333333;
-}
-
-.bg-theme2-hover:hover {
-  background-color: #365a97;
-  color: #fff;
-}
-
-.bg-linear-theme {
-  background: linear-gradient(180deg, #edf6ff, #fff 53.65%, #f0f7ff);
-}
-
-.bg-linear-theme2 {
-  background: linear-gradient(180deg, #f0f7ff, #fff 53.65%, #edf6ff);
-}
-
-.bg-gradient-theme {
-  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
-}
-
-.bd-theme {
-  border-color: #365a97 !important;
-}
-
 /* style end ------------------------------------------------------ */
 
 .Game_BG {
@@ -547,4 +505,14 @@ a {
 .form-control-h input[type="checkbox"]:checked {
   color: yellow;
   background-color: #003b39;
+}
+
+.tebleStyle * {
+  /* padding: 0 0.1rem 0 0.1rem !important; */
+  padding: 0.5rem !important;
+  text-align: center;
+}
+
+.centerStyle * {
+  text-align: center !important;
 }
