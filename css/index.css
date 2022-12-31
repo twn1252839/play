@@ -185,47 +185,26 @@
 
 /* uk-------------------- */
 .uk-tab > .uk-active > a {
-  /* color: #333; */
-  /* border-color: transparent; */
+  color: #fff;
 }
 
 .uk-open > .uk-accordion-title::before {
-  background-image: url("../img/手機index_img/arrowDownList/collapsibleIconLight.svg");
-  order: 0;
+  color: #fff;
 }
 
 .uk-accordion-title::before {
-  content: "";
-  width: 1.4em;
-  height: 1.4em;
-  margin-left: 10px;
-  float: right;
-  color: #fff !important;
-  background-image: url("../img/手機index_img/arrowDownList/collapsibleIcon.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  color: #fff;
 }
 
 /* 啟動背景 */
 .uk-accordion-title:focus,
 .uk-accordion-title:hover {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  background: linear-gradient(180deg, #81dcff 0%, #4da8ff 100%);
+  color: #00ffff;
 }
 
 /* 未啟動背景 */
 .uk-accordion-title {
-  display: block;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: #333;
-  overflow: hidden;
-  background-color: #f0f7ff;
-  border: 2px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 8px;
+  color: #fff;
 }
 
 /* uk END-------------------- */

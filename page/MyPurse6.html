@@ -33,20 +33,11 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/UK_Page.css">
+  <link rel="stylesheet" href="../css/tableStyle.css">
 
   <title>資金紀錄</title>
   <style>
-    .money_width {
-      min-width: 17vw;
-    }
 
-    .vw50 {
-      min-width: 50vw;
-    }
-
-    .vw35 {
-      min-width: 35vw;
-    }
   </style>
 </head>
 
@@ -108,7 +99,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="table-responsive-sm col-12 m-0 p-0 textWhite">
+          <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 50% !important;">
             <!--  -->
             <table class="table table-dark textWhite tebleStyle" style="width: 80vw;overflow-x: hidden">
               <thead>
@@ -119,7 +110,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="table-active">
+                <tr class="table-toggle table-active">
                   <td class="vw35">
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
@@ -133,7 +124,7 @@
                     <p class="fsz-08 text-secondary text-right">桃戶餘額:3517.78</p>
                   </td>
                 </tr>
-                <tr class="">
+                <tr class="table-toggle">
                   <td class="vw35">
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
@@ -159,21 +150,24 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- 修改 -->
+  <!-- 修改 -->
 
-    <!-- 修改 -->
-    <!-- Footer -->
-    <script>
-      PCFooter();
+  <!-- 修改 -->
+  <!-- Footer -->
+  <script>
+    PCFooter();
+  </script>
+  <script>
+    MDFooter();
+  </script>
+
+  <script src="../js/tableToggle.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
-    <script>
-      MDFooter();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-      </script>
 </body>
 
 </html>

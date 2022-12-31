@@ -208,64 +208,72 @@ p {
 }
 
 text-theme {
-  color: #365a97;
+  color: #365a97 !important;
 }
 .text-theme1 {
-  color: #00ffff;
+  color: #00ffff !important;
 }
 .text-theme2 {
-  color: #153582;
+  color: #153582 !important;
 }
 .text-theme3 {
-  color: #ed6b75;
+  color: #ed6b75 !important;
 }
 .text-theme5 {
-  color: #f8c725;
+  color: #f8c725 !important;
 }
 .text-theme6 {
-  color: #008000;
+  color: #008000 !important;
+}
+.text-theme9 {
+  color: #f9ed00 !important;
 }
 
 .bg-theme {
-  background-color: #00ffff;
+  background-color: #00ffff !important;
 }
 .bg-theme1 {
-  background-color: #0071bc;
+  background-color: #0071bc !important;
 }
 .bg-theme2 {
-  background-color: #003b39;
+  background-color: #003b39 !important;
 }
 .bg-theme3 {
-  background-color: #333333;
+  background-color: #333333 !important;
 }
 .bg-theme5 {
-  background-color: #00a199;
+  background-color: #00a199 !important;
 }
 .bg-theme6 {
-  background-color: #e95514;
+  background-color: #e95514 !important;
 }
 .bg-theme7 {
-  background-color: #153582;
+  background-color: #153582 !important;
 }
 .bg-theme8 {
-  background-color: #ed6b75;
+  background-color: #ed6b75 !important;
 }
 
 .bg-theme2-hover:hover {
-  background-color: #365a97;
-  color: #fff;
+  background-color: #365a97 !important;
+  color: #fff !important;
 }
 
 .bg-linear-theme {
-  background: linear-gradient(180deg, #0071bc, #00ffff 53.65%, #f0f7ff);
+  background: linear-gradient(
+    180deg,
+    #0071bc,
+    #00ffff 53.65%,
+    #f0f7ff
+  ) !important;
 }
 
 .bg-linear-theme2 {
-  background: linear-gradient(180deg, #f0f7ff, #fff 53.65%, #edf6ff);
+  background: linear-gradient(180deg, #f0f7ff, #fff 53.65%, #edf6ff) !important;
 }
 
 .bg_gradient_theme {
-  background: linear-gradient(180deg, #00ffff 0%, #0071bc 100%);
+  background: linear-gradient(180deg, #00ffff 0%, #0071bc 100%) !important;
 }
 
 .bd-theme {

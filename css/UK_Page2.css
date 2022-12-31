@@ -2,6 +2,7 @@
 .uk-subnav > .uk-active > a {
   background-color: #00a199 !important;
   color: #fff;
+  border-color: transparent !important;
   border-radius: 8%;
   padding-bottom: 1%;
   padding-top: 1%;

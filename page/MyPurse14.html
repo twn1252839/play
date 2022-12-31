@@ -35,11 +35,9 @@
   <link rel="stylesheet" href="../css/UK_Page.css">
   <link rel="stylesheet" href="../css/tableStyle.css">
 
-  <title>充值紀錄</title>
+  <title>輸贏報表</title>
   <style>
-    .money_width {
-      min-width: 17vw;
-    }
+
   </style>
 </head>
 
@@ -59,6 +57,19 @@
         <div class="p-4 row">
           <!--  -->
           <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
+            <!--  -->
+            <div class="row m-0 p-0 text-white centerCenter">
+              <div class="col m-0 p-0">
+                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                  <option selected="">投注時間</option>
+                  <option selected="">投注時間</option>
+                  <option value="1">投注時間</option>
+                  <option value="2">結算時間</option>
+                  <option value="3">生效時間</option>
+                </select>
+              </div>
+            </div>
+            <!--  -->
             <div class="row m-0 p-0 py-1 text-white centerCenter">
               <div class="col m-0 p-0">
                 <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
@@ -81,72 +92,84 @@
             <table class="table table-dark textWhite tebleStyle" style="width: 80vw;overflow-x: hidden">
               <thead>
                 <tr>
-                  <th scope="col" class="">時間</th>
-                  <th scope="col" class="">資訊</th>
-                  <th scope="col" class="">申請</th>
-                  <th scope="col" class="">實際</th>
-                  <th scope="col" class="">狀態</th>
+                  <th scope="col" class="">類型</th>
+                  <th scope="col" class="">筆數</th>
+                  <th scope="col" class="">投注額</th>
+                  <th scope="col" class="">有效額</th>
+                  <th scope="col" class="">總結</th>
                 </tr>
               </thead>
               <tbody>
                 <!--  -->
                 <tr class="table-toggle table-active">
-                  <td class="vw35 text-left">
-                    <p class="text-left">12/24</p>
-                    <p class="text-left">21:48:01</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-theme1">2022-12-27</p>
                   </td>
-                  <td class="vw50 text-left">
-                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">5筆</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">675</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">675</p>
                   </td>
-                  <td class="vw25">
-                    <p class=" text-success">成功</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-danger">-285</p>
                   </td>
                 </tr>
                 <!--  -->
                 <tr class="table-toggle">
-                  <td class="vw35 text-left">
-                    <p class="text-left">12/24</p>
-                    <p class="text-left">21:48:01</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-theme1">2022-12-27</p>
                   </td>
-                  <td class="vw50 text-left">
-                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">93筆</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">74186</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">71253</p>
                   </td>
-                  <td class="vw25">
-                    <p class=" text-danger">失敗</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-success">8913</p>
                   </td>
                 </tr>
                 <!--  -->
                 <tr class="table-toggle">
-                  <td class="vw35 text-left">
-                    <p class="text-left">12/24</p>
-                    <p class="text-left">21:48:01</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-theme1">2022-12-27</p>
                   </td>
-                  <td class="vw50 text-left">
-                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">93筆</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">74186</p>
                   </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left">71253</p>
                   </td>
-                  <td class="vw25">
-                    <p class=" text-danger">失敗</p>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-success">8913</p>
+                  </td>
+                </tr>
+                <!--  -->
+                <tr class="table-toggle">
+                  <td class="vw25 text-left">
+                    <p class="text-left">總計</p>
+                  </td>
+                  <td class="vw25 text-left">
+                    <p class="text-left">93筆</p>
+                  </td>
+                  <td class="vw25 text-left">
+                    <p class="text-left">74186</p>
+                  </td>
+                  <td class="vw25 text-left">
+                    <p class="text-left">71253</p>
+                  </td>
+                  <td class="vw25 text-left">
+                    <p class="text-left text-success">8913</p>
                   </td>
                 </tr>
               </tbody>
