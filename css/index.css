@@ -495,3 +495,13 @@ a {
 .centerStyle * {
   text-align: center !important;
 }
+
+.p_bottomListStyle {
+  padding-bottom: 35vh !important;
+}
+
+@media screen and (max-width: 768px) {
+  .p_bottomListStyle {
+    padding-bottom: 15vh !important;
+  }
+}
