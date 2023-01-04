@@ -500,8 +500,21 @@ a {
   padding-bottom: 35vh !important;
 }
 
+.leftIocnStyle {
+  width: 7.5rem;
+  height: auto;
+  margin-top: 10px;
+  z-index: 99999999999;
+}
+
 @media screen and (max-width: 768px) {
   .p_bottomListStyle {
     padding-bottom: 15vh !important;
+  }
+  .leftIocnStyle {
+    width: 3.5rem;
+    height: auto;
+    margin-top: -30px;
+    z-index: 99999999999;
   }
 }
