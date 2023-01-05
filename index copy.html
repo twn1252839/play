@@ -33,25 +33,18 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/UK_Page.css">
+  <link rel="stylesheet" href="../css/tableStyle.css">
 
-  <title>投注紀錄</title>
+  <title>資金紀錄</title>
   <style>
-    .money_width {
-      min-width: 7vw;
-    }
 
-    @media screen and (max-width: 768px) {
-      .money_width {
-        min-width: 17vw;
-      }
-    }
   </style>
 </head>
 
 
 <body>
-  <div class="container-fluid p-0 m-0 "
-    style="background: url(../img/手機index_img/bg3.png) top center no-repeat;background-size:cover;">
+  <div class="container-fluid p-0 m-0 min-vh-100 d-md-none"
+    style="background: url(../img/手機index_img/bg37.jpg) top center no-repeat;background-size:cover;">
     <div class="container">
 
       <!-- Header -->
@@ -60,110 +53,101 @@
         // PageHeaderBanner()
       </script>
 
-      <div class="row m-0 p-0 p-5 min-vh-100 p_bottomListStyle vwStyle1 mx-auto"
-        style="background: url(../img/手機index_img/bg4.png) top center no-repeat;background-size:contain;">
-        <!--  -->
-        <div class="col-12 m-0 px-2 px-md-5 pt-0 pt-md-5" id="">
-          <!-- 改 -->
-          <div class="p-4 p-md-0 row ">
-            <!--  -->
-            <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
-
-              <div class="row m-0 p-0 text-white centerCenter">
-                <div class="col m-0 p-0">
-                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                    <option selected="">WM真人</option>
-                    <option value="1">WM真人</option>
-                    <option value="2">SA真人</option>
-                    <option value="3">歐博真人</option>
-                  </select>
-                </div>
-                <div class="col m-0 p-0 text-right">
-                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                    <option selected="">投注時間</option>
-                    <option value="1">投注時間</option>
-                    <option value="2">結算時間</option>
-                    <option value="3">生效時間</option>
-                  </select>
-                </div>
+      <div class="m-0 p-0 p-5">
+        <div class="p-4 row">
+          <!--  -->
+          <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
+            <div class="row m-0 p-0 py-1 text-white centerCenter">
+              <div class="col m-0 p-0">
+                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                  <option selected="">2022-09-18</option>
+                  <option value="1">2022-09-18</option>
+                </select>
               </div>
-
-              <div class="row m-0 p-0 py-1 text-white centerCenter">
-                <div class="col m-0 p-0">
-                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                    <option selected="">2022-09-18</option>
-                    <option value="1">2022-09-18</option>
-                  </select>
-                </div>
-                -
-                <div class="col m-0 p-0 text-right">
-                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                    <option selected="">2022-09-18</option>
-                    <option value="1">2022-09-18</option>
-                  </select>
-                </div>
+              -
+              <div class="col m-0 p-0 text-right">
+                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                  <option selected="">2022-09-18</option>
+                  <option value="1">2022-09-18</option>
+                </select>
               </div>
             </div>
-            <!--  -->
-            <div class="table-responsive-sm col-12 m-0 p-0 textWhite">
-              <!--  -->
-              <table class="table table-dark textWhite tebleStyle vwStyleTable" style="overflow-x: hidden">
-                <thead>
-                  <tr>
-                    <th scope="col" class="">類型</th>
-                    <th scope="col" class="">筆數</th>
-                    <th scope="col" class="">投注額</th>
-                    <th scope="col" class="">有效額</th>
-                    <th scope="col" class="">總結</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!--  -->
-                  <tr class="table-toggle table-active">
-                    <td class="text-theme1">百家樂</td>
-                    <td>5</td>
-                    <td>665</td>
-                    <td>665</td>
-                    <td class="text-theme3">-285</td>
-                  </tr>
-                  <!--  -->
-                  <tr class="table-toggle">
-                    <td>遊戲</td>
-                    <td>5</td>
-                    <td>665</td>
-                    <td>665</td>
-                    <td class="text-theme3">-285</td>
-                  </tr>
-                  <!--  -->
-                  <tr class="table-toggle">
-                    <td>遊戲</td>
-                    <td>5</td>
-                    <td>665</td>
-                    <td>665</td>
-                    <td class="text-theme3">-285</td>
-                  </tr>
-                  <!--  -->
-                  <tr class="table-toggle">
-                    <td>遊戲</td>
-                    <td>5</td>
-                    <td>665</td>
-                    <td>665</td>
-                    <td class="text-theme3">-285</td>
-                  </tr>
-                  <!--  -->
-                  <tr class="table-toggle">
-                    <td>總計</td>
-                    <td>5</td>
-                    <td>665</td>
-                    <td>665</td>
-                    <td class="text-theme3">-285</td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <div class="row m-0 p-0 text-white centerCenter">
+              <div class="col m-0 p-0">
+                <p class="text-left">操作:</p>
+                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                  <option selected="">全部</option>
+                  <option value="1">全部</option>
+                  <option value="2">存入</option>
+                  <option value="3">提出</option>
+                </select>
+              </div>
+              <div class="col m-0 p-0 text-right">
+                <p class="text-left">異動:</p>
+                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                  <option selected="">全部</option>
+                  <option value="1">全部</option>
+                  <option value="2">資金調度</option>
+                  <option value="3">平台轉點</option>
+                  <option value="4">會員出人金</option>
+                  <option value="5">人工出人金</option>
+                  <option value="6">返水派發</option>
+                  <option value="7">優惠派發</option>
+                </select>
+              </div>
             </div>
           </div>
+          <!--  -->
+          <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 50% !important;">
+            <!--  -->
+            <table class="table table-dark textWhite tebleStyle" style="width: 80vw;overflow-x: hidden">
+              <thead>
+                <tr>
+                  <th scope="col" class="">時間</th>
+                  <th scope="col" class="">資訊</th>
+                  <th scope="col" class="">金額</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-toggle table-active">
+                  <td class="vw35">
+                    <p class="text-left">12/24</p>
+                    <p class="text-left">21:48:01</p>
+                  </td>
+                  <td class="vw50">
+                    <p class="text-left">存入-返水派發</p>
+                    <p class="fsz-08 text-secondary text-left">金濃电子-退水</p>
+                  </td>
+                  <td class="vw50">
+                    <p class="text-right">+20</p>
+                    <p class="fsz-08 text-secondary text-right">桃戶餘額:3517.78</p>
+                  </td>
+                </tr>
+                <tr class="table-toggle">
+                  <td class="vw35">
+                    <p class="text-left">12/24</p>
+                    <p class="text-left">21:48:01</p>
+                    <p class="text-left">12/24</p>
+                    <p class="text-left">21:48:01</p>
+                  </td>
+                  <td class="vw50">
+                    <p class="text-left">存入-平台轉點</p>
+                    <p class="fsz-08 text-secondary text-left">好路棋牌轉至帳戶</p>
+                    <p class="text-left">提出-平台轉點</p>
+                    <p class="fsz-08 text-secondary text-left">主帳戶轉至好路棋牌</p>
+                  </td>
+                  <td class="vw50">
+                    <p class="text-right text-theme1">+3497</p>
+                    <p class="fsz-08 text-secondary text-right">帳戶餘額:3497.78</p>
+                    <p class="text-right text-danger">-3497</p>
+                    <p class="fsz-08 text-secondary text-right">帳戶餘額:0.78</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        </di>
       </div>
     </div>
   </div>
@@ -178,6 +162,8 @@
   <script>
     MDFooter();
   </script>
+
+  <script src="../js/tableToggle.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
