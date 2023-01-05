@@ -35,20 +35,17 @@
   <link rel="stylesheet" href="../css/UK_Page.css">
   <link rel="stylesheet" href="../css/tableStyle.css">
 
-  <title>取款紀錄</title>
+  <title>我的消息</title>
   <style>
-    .money_width {
-      min-width: 17vw;
-    }
+
   </style>
 </head>
 
 
 <body>
   <div class="container-fluid p-0 m-0 min-vh-100 d-md-none"
-    style="background: url(../img/手機index_img/bg37.jpg) top center no-repeat;background-size:cover;">
+    style="background: url(../img/手機index_img/bg35.jpg) top center no-repeat;background-size:cover;">
     <div class="container">
-
       <!-- Header -->
       <script>
         PageHeader();
@@ -59,33 +56,18 @@
         <div class="p-4 row">
           <!--  -->
           <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
-            <div class="row m-0 p-0 py-1 text-white centerCenter">
-              <div class="col m-0 p-0">
-                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                  <option selected="">2022-09-18</option>
-                  <option value="1">2022-09-18</option>
-                </select>
-              </div>
-              -
-              <div class="col m-0 p-0 text-right">
-                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                  <option selected="">2022-09-18</option>
-                  <option value="1">2022-09-18</option>
-                </select>
-              </div>
+            <div class="row m-0 p-0 py-1 text-white">
+              <button class="btn py-0 m-1 px-2 bg-theme6 textWhite fsz-08" type="button">一鍵已讀</button>
             </div>
           </div>
           <!--  -->
-          <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 50% !important;">
+          <div class="table-responsive-sm col-12 m-0 p-0 textWhite">
             <!--  -->
             <table class="table table-dark textWhite tebleStyle" style="width: 80vw;overflow-x: hidden">
               <thead>
                 <tr>
                   <th scope="col" class="">時間</th>
-                  <th scope="col" class="">資訊</th>
-                  <th scope="col" class="">申請</th>
-                  <th scope="col" class="">實際</th>
-                  <th scope="col" class="">狀態</th>
+                  <th scope="col" class="text-left">訊息</th>
                 </tr>
               </thead>
               <tbody>
@@ -95,38 +77,18 @@
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
                   </td>
-                  <td class="vw50">
-                    <a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary">單號:DP16717619724</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class=" text-success">成功</p>
-                  </td>
-                </tr>
-                <!--  -->
-                <tr class="table-toggle">
-                  <td class="vw35 text-left">
-                    <p class="text-left">12/24</p>
-                    <p class="text-left">21:48:01</p>
-                  </td>
-                  <td class="vw50">
-                    <a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary">單號:DP16717619724</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class=" text-danger">失敗</p>
+                  <td class="vw85">
+                    <div class="row m-0 p-0">
+                      <div class="col m-0 p-0 centerCenter">
+                        <p class=" text-left">【售維公告】</p>
+                        <p class="fsz-08 text-secondary text-left"> 在好玩娛樂城上線.. </p>
+                      </div>
+                      <div class="col m-0 p-0 centerCenter">
+                        <a class="text-right" href="./Promotion.html">
+                          <img class="img-fluid" src="../img/手機index_img/MyPurse會員/angle-right.png" alt="">
+                        </a>
+                      </div>
+                    </div>
                   </td>
                 </tr>
                 <!--  -->
@@ -135,18 +97,18 @@
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
                   </td>
-                  <td class="vw50">
-                    <a class="text-primary" href="">詳情</a>
-                    <p class="fsz-08 text-secondary">單號:DP16717619724</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class="">1000</p>
-                  </td>
-                  <td class="vw25">
-                    <p class=" text-danger">失敗</p>
+                  <td class="vw85">
+                    <div class="row m-0 p-0">
+                      <div class="col m-0 p-0 centerCenter">
+                        <p class=" text-left">【皇家電子】</p>
+                        <p class="fsz-08 text-secondary text-left"> 在好玩娛樂城上線.. </p>
+                      </div>
+                      <div class="col m-0 p-0 centerCenter">
+                        <a class="text-right" href="./Promotion.html">
+                          <img class="img-fluid" src="../img/手機index_img/MyPurse會員/angle-right.png" alt="">
+                        </a>
+                      </div>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -171,8 +133,8 @@
   <script src="../js/tableToggle.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
