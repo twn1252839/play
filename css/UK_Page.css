@@ -20,3 +20,11 @@
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
 }
+
+/* .uk-open > .uk-accordion-title::before {
+  background-image: url("../img/minus-solid.svg");
+}
+
+.uk-accordion-title::before {
+  background-image: url("../img/plus-solid.svg");
+} */
