@@ -37,7 +37,13 @@
   <title>充值</title>
   <style>
     .money_width {
-      min-width: 17vw;
+      min-width: 7vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .money_width {
+        min-width: 17vw;
+      }
     }
   </style>
 </head>
@@ -57,7 +63,7 @@
       <div class="row m-0 p-0 p-5 min-vh-100 p_bottomListStyle vwStyle2 mx-auto"
         style="background: url(../img/手機index_img/bg4.png) top center no-repeat;background-size:contain;">
         <!--  -->
-        <div class="col-12 m-0 px-2 pt-0 pt-md-5" id="">
+        <div class="col-12 m-0 px-2 px-md-5 pt-0 pt-md-5" id="">
           <!-- 改 -->
           <ul class="uk-subnav uk-subnav-pill m-0 p-0 border-bottom border-white pb-1" uk-switcher
             style="border-width: 2px !important;">
@@ -107,7 +113,7 @@
                               <div class="row m-0 p-0">
                                 <div class="col-12 m-0 py-2 px-0">
                                   <label class="align-self-center" for="">金額:</label>
-                                  <input class="rounded" type="text" style="width: 28vw;">
+                                  <input class="rounded" type="text" style="width: 50%;">
                                   <button class="btn rounded py-1 px-2 bg-theme1 text-white fsz-08 font-weight-bold"
                                     type="button">立即充值</button>
                                 </div>
