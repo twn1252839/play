@@ -32,22 +32,27 @@
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/UK_Page2.css">
+  <link rel="stylesheet" href="../css/UK_Page.css">
 
   <title>分享賺錢</title>
   <style>
     .money_width {
-      min-width: 17vw;
+      min-width: 7vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .money_width {
+        min-width: 17vw;
+      }
     }
   </style>
 </head>
 
 
 <body>
-  <div class="container-fluid p-0 m-0"
-    style="background: url(../img/手機index_img/bg3.png) top center;background-size:contain;">
-    <div class="container min-vh-100 vwStyle1 centerCenter"
-      style="background: url(../img/手機index_img/bg35.jpg) top center;background-size:contain;">
+  <div class="container-fluid p-0 m-0 "
+    style="background: url(../img/手機index_img/bg3.png) top center no-repeat;background-size:cover;">
+    <div class="container">
 
       <!-- Header -->
       <script>
@@ -55,46 +60,73 @@
         // PageHeaderBanner()
       </script>
 
-      <div class="m-0 p-0 p-5">
-        <div class="p-4 row">
-          <!--  -->
-          <div class="col-12 m-0 px-1 pt-0 bg-white centerStyle rounded">
-            <h3 class="font-weight-bold text-theme2">LINE註冊綁定</h3>
-            <div class=" m-0 p-0">
-              <img class="img-fluid p-2 centerCenter" src="../img/手機index_img/MyPurse會員/QR2.png" alt="">
-            </div>
-            <p class="fsz-08">專屬於你的QR CODE</p>
+      <div class="row m-0 p-0 p-5 min-vh-100 p_bottomListStyle vwStyle2 mx-auto"
+        style="background: url(../img/手機index_img/bg4.png) top center no-repeat;background-size:contain;">
+        <!--  -->
+        <div class="col-12 m-0 px-2 px-md-5 pt-0 pt-md-5" id="">
+          <!-- 改 -->
+          <div class="p-4 row">
             <!--  -->
-            <ul class="uk-subnav uk-subnav-pill m-0 centerCenter" uk-switcher>
-              <li class="mx-1"><a href="#">LINE註冊綁定</a></li>
-              <li class="mx-1"><a href="#">網站分享</a></li>
-            </ul>
+            <div class="col-12 m-0 px-1 pt-0 bg-white centerStyle rounded">
+              <h3 class="font-weight-bold text-theme2">LINE註冊綁定</h3>
+              <div class=" m-0 p-0">
+                <img class="img-fluid p-2 centerCenter" src="../img/手機index_img/MyPurse會員/QR2.png" alt="">
+              </div>
+              <p class="fsz-08">專屬於你的QR CODE</p>
+              <!--  -->
+              <ul class="uk-subnav uk-subnav-pill m-0 centerCenter" uk-switcher>
+                <li class="mx-1"><a href="#">LINE註冊綁定</a></li>
+                <li class="mx-1"><a href="#">網站分享</a></li>
+              </ul>
 
-            <ul class="uk-switcher m-0 pb-4 px-2">
-              <li class="active">
-                <p class="fsz-08 font-weight-bold text-secondary">你的專屬網址,複制下列文字發送給朋友</p>
-                <div class="m-0 p-0 border border-dark rounded p-1">
-                  <p class="fsz-08">我輕幫自己加薪創造斜人生,你呢?</p>
-                  <p class="fsz-08">https://liff.line.me/16569232
-                    61-A8LdODYg?args=test9998</p>
-                </div>
-                <div class="row m-0 p-0 py-1">
-                  <div class="col m-0 p-0">
-                    <button class="btn py-0 bg-theme5 text-white" type="button">
-                      <img class="img-fluid" src="../img/手機index_img/MyPurse會員/copy.png" alt="">
-                      複製
-                    </button>
+              <ul class="uk-switcher m-0 pb-4 px-2">
+                <li class="uk-active">
+                  <p class="fsz-08 font-weight-bold text-secondary">你的專屬網址,複制下列文字發送給朋友</p>
+                  <div class="m-0 p-0 border border-dark rounded p-1">
+                    <p class="fsz-08">我輕幫自己加薪創造斜人生,你呢?</p>
+                    <p class="fsz-08">https://liff.line.me/16569232
+                      61-A8LdODYg?args=test9998</p>
                   </div>
-                  <div class="col m-0 p-0">
-                    <button class="btn py-0 bg-theme8 text-white" type="button">
-                      <img class="img-fluid" src="../img/手機index_img/MyPurse會員/share.png" alt="">
-                      分享</button>
+                  <div class="row m-0 p-0 py-1">
+                    <div class="col m-0 p-0">
+                      <button class="btn py-0 bg-theme5 text-white" type="button">
+                        <img class="img-fluid" src="../img/手機index_img/MyPurse會員/copy.png" alt="">
+                        複製
+                      </button>
+                    </div>
+                    <div class="col m-0 p-0">
+                      <button class="btn py-0 bg-theme8 text-white" type="button">
+                        <img class="img-fluid" src="../img/手機index_img/MyPurse會員/share.png" alt="">
+                        分享</button>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="">
+                  <p class="fsz-08 font-weight-bold text-secondary">網站分享</p>
+                  <div class="m-0 p-0 border border-dark rounded p-1">
+                    <p class="fsz-08">我輕幫自己加薪創造斜人生,你呢?</p>
+                    <p class="fsz-08">https://liff.line.me/16569232
+                      61-A8LdODYg?args=test9998</p>
+                  </div>
+                  <div class="row m-0 p-0 py-1">
+                    <div class="col m-0 p-0">
+                      <button class="btn py-0 bg-theme5 text-white" type="button">
+                        <img class="img-fluid" src="../img/手機index_img/MyPurse會員/copy.png" alt="">
+                        複製
+                      </button>
+                    </div>
+                    <div class="col m-0 p-0">
+                      <button class="btn py-0 bg-theme8 text-white" type="button">
+                        <img class="img-fluid" src="../img/手機index_img/MyPurse會員/share.png" alt="">
+                        分享</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        </di>
       </div>
     </div>
   </div>
