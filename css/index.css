@@ -507,6 +507,17 @@ a {
   z-index: 99999999999;
 }
 
+.vwStyle {
+  width: 39vw;
+}
+.vwStyle1 {
+  width: 39vw;
+}
+.vwStyle2 {
+  width: 39vw;
+}
+
+/* 手機 */
 @media screen and (max-width: 768px) {
   .p_bottomListStyle {
     padding-bottom: 15vh !important;
@@ -516,5 +527,14 @@ a {
     height: auto;
     margin-top: -30px;
     z-index: 99999999999;
+  }
+  .vwStyle {
+    width: 70vw;
+  }
+  .vwStyle1 {
+    width: 100vw;
+  }
+  .vwStyle2 {
+    width: 90vw;
   }
 }
