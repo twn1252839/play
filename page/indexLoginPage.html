@@ -43,8 +43,8 @@
 
 
 <body>
-  <div class="container-fluid p0 m-0"
-    style="background: url(../img/手機index_img/bg2.png) top center;background-size: cover;min-height: 120vh;">
+  <div class="container-fluid p-0 m-0"
+    style="background: url(../img/手機index_img/bg2.png) top center no-repeat;background-size: cover;min-height: 120vh;">
     <div class="container pb-0 px-0">
 
       <!-- Header -->
@@ -61,15 +61,53 @@
       </div>
     </div>
 
-    <div class="row m-0 p-0">
-      <!-- title卡片 -->
-      <div class='uk-inline col-12 pt-1 px-1 centerCenter' style="padding-bottom: 99px;">
-        <!-- filter_exclusion -->
-        <img src="../img/手機index_img/LoginPage/2.png" alt="" class="img-fluid filter_color_dodge d-md-none">
-        <div class='uk-overlay uk-overlay-default uk-position-top-center text-center bg-transparent'>
-
+    <div class="row m-0 p-0 mx-3 pt-5 vwStyle2 mx-auto"
+      style="background: url(../img/手機index_img/LoginPage/2.png) top center no-repeat;background-size: contain;min-height: 100vh;">
+      <!-- from -->
+      <form class="px-1 form-control-h mx-auto pt-0 pt-md-5 p_bottomListStyle " action="" method="get">
+        <p class="font-weight-bold h4 text-theme1 text-center pb-3">用户登入</p>
+        <div class="col-12 input-group pb-3 bgc-flex-v"
+          style="background-image: url(../img/手機index_img/LoginPage/b1.png);background-size: contain;">
+          <div class="input-group-prepend w3-opacity">
+            <span class="input-group-text bg-transparent bd_transparent" id="basic-addon1">
+            </span>
+          </div>
+          <input type="text" class="form-control bg-transparent bd_transparent input_login py-0 outline_none"
+            placeholder="請輸入登錄ID" aria-label="Username" aria-describedby="basic-addon1">
         </div>
-      </div>
+        <!--  -->
+        <div class="col-12 input-group pb-1 bgc-flex-v"
+          style="background-image: url(../img/手機index_img/LoginPage/b2.png);background-size: contain;">
+          <div class="input-group-prepend w3-opacity">
+            <span class="input-group-text bg-transparent bd_transparent" id="basic-addon1">
+            </span>
+          </div>
+          <input type="text" class="form-control bg-transparent bd_transparent input_login py-0 outline_none"
+            placeholder="請輸入密碼" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col">
+            <input type="checkbox" name="pwd" id="">
+            <label for="pwd" class="text-light font-weight-bold pl-2">記住密碼</label>
+          </div>
+          <a href="" class="col text-light font-weight-bold text-right">忘記密碼?</a>
+        </div>
+        <!--  -->
+        <a href="../indexLogin.html" class="col-12 input-group pb-0 bgc-flex-v"
+          style="background-image: url(../img/手機index_img/LoginPage/t1.png);background-size: contain;">
+          <!-- <div class="input-group-prepend w3-opacity">
+                  <span class="input-group-text bg-transparent bd_transparent" id="basic-addon1">
+                  </span>
+                </div> -->
+          <input class="py-1" type="submit" name="" id="" value="">
+        </a>
+        <!--  -->
+        <a href="../index.html" class="col-12 input-group pb-0 bgc-flex-v"
+          style="background-image: url(../img/手機index_img/LoginPage/t2.png);background-size: contain;">
+          <input class="py-2" type="submit" name="" id="" value="">
+        </a>
+      </form>
     </div>
   </div>
 

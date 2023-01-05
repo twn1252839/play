@@ -533,4 +533,7 @@ a {
   .vwStyle1 {
     width: 100vw;
   }
+  .vwStyle2 {
+    width: 90vw;
+  }
 }
