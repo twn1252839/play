@@ -34,18 +34,24 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/UK_Page.css">
 
-  <title>銀行卡</title>
+  <title>投注紀錄</title>
   <style>
     .money_width {
-      min-width: 17vw;
+      min-width: 7vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .money_width {
+        min-width: 17vw;
+      }
     }
   </style>
 </head>
 
 
 <body>
-  <div class="container-fluid p-0 m-0 min-vh-100 d-md-none"
-    style="background: url(../img/手機index_img/bg35.jpg) top center;background-size:contain;">
+  <div class="container-fluid p-0 m-0 "
+    style="background: url(../img/手機index_img/bg3.png) top center no-repeat;background-size:cover;">
     <div class="container">
 
       <!-- Header -->
@@ -54,37 +60,110 @@
         // PageHeaderBanner()
       </script>
 
-      <div class="m-0 p-0 p-5">
-        <div class="p-4 row">
-          <!--  -->
-          <div class="col-12 m-0 px-1 pt-0 border-bottom border-white pb-1" style="border-width: 2px !important;">
-            <div class="row m-0 p-0 text-white centerCenter">
-              <div class="col m-0 p-0">
-                <p class="fsz-08">005土地银行123</p>
+      <div class="row m-0 p-0 p-5 min-vh-100 p_bottomListStyle vwStyle1 mx-auto"
+        style="background: url(../img/手機index_img/bg4.png) top center no-repeat;background-size:contain;">
+        <!--  -->
+        <div class="col-12 m-0 px-2 px-md-5 pt-0 pt-md-5" id="">
+          <!-- 改 -->
+          <div class="p-4 p-md-0 row ">
+            <!--  -->
+            <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
+
+              <div class="row m-0 p-0 text-white centerCenter">
+                <div class="col m-0 p-0">
+                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                    <option selected="">WM真人</option>
+                    <option value="1">WM真人</option>
+                    <option value="2">SA真人</option>
+                    <option value="3">歐博真人</option>
+                  </select>
+                </div>
+                <div class="col m-0 p-0 text-right">
+                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                    <option selected="">投注時間</option>
+                    <option value="1">投注時間</option>
+                    <option value="2">結算時間</option>
+                    <option value="3">生效時間</option>
+                  </select>
+                </div>
               </div>
-              <div class="col m-0 p-0">
-                <div class="row m-0 p-0">
-                  <div class="col m-0 p-0 centerCenter">
-                    <p class="text-right fsz-08">已驗證</p>
-                  </div>
-                  <div class="col m-0 p-0 text-white">
-                    <button class="btn py-0 m-1 px-2 bg-theme6 textWhite fsz-08" type="button">查看</button>
-                  </div>
+
+              <div class="row m-0 p-0 py-1 text-white centerCenter">
+                <div class="col m-0 p-0">
+                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                    <option selected="">2022-09-18</option>
+                    <option value="1">2022-09-18</option>
+                  </select>
+                </div>
+                -
+                <div class="col m-0 p-0 text-right">
+                  <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
+                    <option selected="">2022-09-18</option>
+                    <option value="1">2022-09-18</option>
+                  </select>
                 </div>
               </div>
             </div>
-          </div>
-          <!--  -->
-          <button class="btn btn-block py-0 my-1 mx-1 bg-theme5 text-white mt-3" type="button">添加</button>
-          <!--  -->
-          <div class="col-12 m-0 px-1 mt-5 pt-2 border-top border-white pb-1 font-weight-bold textWhite"
-            style="border-width: 2px !important;">
-            <p class="fsz-08 py-1">開戶行:005土地銀行</p>
-            <p class="fsz-08 py-1">開戶支行:123</p>
-            <p class="fsz-08 py-1">開戶姓名:123</p>
-            <p class="fsz-08 py-1">跟行帳號:123</p>
+            <!--  -->
+            <div class="table-responsive-sm col-12 m-0 p-0 textWhite">
+              <!--  -->
+              <table class="table table-dark textWhite tebleStyle vwStyleTable" style="overflow-x: hidden">
+                <thead>
+                  <tr>
+                    <th scope="col" class="">類型</th>
+                    <th scope="col" class="">筆數</th>
+                    <th scope="col" class="">投注額</th>
+                    <th scope="col" class="">有效額</th>
+                    <th scope="col" class="">總結</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--  -->
+                  <tr class="table-toggle table-active">
+                    <td class="text-theme1">百家樂</td>
+                    <td>5</td>
+                    <td>665</td>
+                    <td>665</td>
+                    <td class="text-theme3">-285</td>
+                  </tr>
+                  <!--  -->
+                  <tr class="table-toggle">
+                    <td>遊戲</td>
+                    <td>5</td>
+                    <td>665</td>
+                    <td>665</td>
+                    <td class="text-theme3">-285</td>
+                  </tr>
+                  <!--  -->
+                  <tr class="table-toggle">
+                    <td>遊戲</td>
+                    <td>5</td>
+                    <td>665</td>
+                    <td>665</td>
+                    <td class="text-theme3">-285</td>
+                  </tr>
+                  <!--  -->
+                  <tr class="table-toggle">
+                    <td>遊戲</td>
+                    <td>5</td>
+                    <td>665</td>
+                    <td>665</td>
+                    <td class="text-theme3">-285</td>
+                  </tr>
+                  <!--  -->
+                  <tr class="table-toggle">
+                    <td>總計</td>
+                    <td>5</td>
+                    <td>665</td>
+                    <td>665</td>
+                    <td class="text-theme3">-285</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
+        </di>
       </div>
     </div>
   </div>

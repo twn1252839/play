@@ -516,6 +516,9 @@ a {
 .vwStyle2 {
   width: 39vw;
 }
+.vwStyleTable {
+  width: 28vw;
+}
 /* 手機 */
 @media screen and (max-width: 768px) {
   .p_bottomListStyle {
@@ -535,5 +538,8 @@ a {
   }
   .vwStyle2 {
     width: 90vw;
+  }
+  .vwStyleTable {
+    width: 100vw;
   }
 }
