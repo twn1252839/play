@@ -35,9 +35,11 @@
   <link rel="stylesheet" href="../css/UK_Page.css">
   <link rel="stylesheet" href="../css/tableStyle.css">
 
-  <title>資金紀錄</title>
+  <title>充值紀錄</title>
   <style>
-
+    .money_width {
+      min-width: 17vw;
+    }
   </style>
 </head>
 
@@ -72,31 +74,6 @@
                 </select>
               </div>
             </div>
-
-            <div class="row m-0 p-0 text-white centerCenter">
-              <div class="col m-0 p-0">
-                <p class="text-left">操作:</p>
-                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                  <option selected="">全部</option>
-                  <option value="1">全部</option>
-                  <option value="2">存入</option>
-                  <option value="3">提出</option>
-                </select>
-              </div>
-              <div class="col m-0 p-0 text-right">
-                <p class="text-left">異動:</p>
-                <select class="form-select rounded px-1 fsz-08" style="width: 28vw;">
-                  <option selected="">全部</option>
-                  <option value="1">全部</option>
-                  <option value="2">資金調度</option>
-                  <option value="3">平台轉點</option>
-                  <option value="4">會員出人金</option>
-                  <option value="5">人工出人金</option>
-                  <option value="6">返水派發</option>
-                  <option value="7">優惠派發</option>
-                </select>
-              </div>
-            </div>
           </div>
           <!--  -->
           <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 50% !important;">
@@ -106,42 +83,70 @@
                 <tr>
                   <th scope="col" class="">時間</th>
                   <th scope="col" class="">資訊</th>
-                  <th scope="col" class="">金額</th>
+                  <th scope="col" class="">申請</th>
+                  <th scope="col" class="">實際</th>
+                  <th scope="col" class="">狀態</th>
                 </tr>
               </thead>
               <tbody>
+                <!--  -->
                 <tr class="table-toggle table-active">
-                  <td class="vw35">
+                  <td class="vw35 text-left">
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
                   </td>
-                  <td class="vw50">
-                    <p class="text-left">存入-返水派發</p>
-                    <p class="fsz-08 text-secondary text-left">金濃电子-退水</p>
+                  <td class="vw50 text-left">
+                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
+                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
                   </td>
-                  <td class="vw50">
-                    <p class="text-right">+20</p>
-                    <p class="fsz-08 text-secondary text-right">桃戶餘額:3517.78</p>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class=" text-success">成功</p>
                   </td>
                 </tr>
+                <!--  -->
                 <tr class="table-toggle">
-                  <td class="vw35">
-                    <p class="text-left">12/24</p>
-                    <p class="text-left">21:48:01</p>
+                  <td class="vw35 text-left">
                     <p class="text-left">12/24</p>
                     <p class="text-left">21:48:01</p>
                   </td>
-                  <td class="vw50">
-                    <p class="text-left">存入-平台轉點</p>
-                    <p class="fsz-08 text-secondary text-left">好路棋牌轉至帳戶</p>
-                    <p class="text-left">提出-平台轉點</p>
-                    <p class="fsz-08 text-secondary text-left">主帳戶轉至好路棋牌</p>
+                  <td class="vw50 text-left">
+                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
+                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
                   </td>
-                  <td class="vw50">
-                    <p class="text-right text-theme1">+3497</p>
-                    <p class="fsz-08 text-secondary text-right">帳戶餘額:3497.78</p>
-                    <p class="text-right text-danger">-3497</p>
-                    <p class="fsz-08 text-secondary text-right">帳戶餘額:0.78</p>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class=" text-danger">失敗</p>
+                  </td>
+                </tr>
+                <!--  -->
+                <tr class="table-toggle">
+                  <td class="vw35 text-left">
+                    <p class="text-left">12/24</p>
+                    <p class="text-left">21:48:01</p>
+                  </td>
+                  <td class="vw50 text-left">
+                    <span class="text-left">線上存款-</span><a class="text-primary" href="">詳情</a>
+                    <p class="fsz-08 text-secondary text-left">單號:DP16717619724</p>
+                  </td>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class="">1000</p>
+                  </td>
+                  <td class="vw25">
+                    <p class=" text-danger">失敗</p>
                   </td>
                 </tr>
               </tbody>
