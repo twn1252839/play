@@ -32,20 +32,27 @@
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/UK_Page2.css">
+  <link rel="stylesheet" href="../css/UK_Page.css">
+  <link rel="stylesheet" href="../css/tableStyle.css">
 
-  <title>Line帳號綁定</title>
+  <title>分享紀錄</title>
   <style>
     .money_width {
-      min-width: 17vw;
+      min-width: 7vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .money_width {
+        min-width: 17vw;
+      }
     }
   </style>
 </head>
 
 
 <body>
-  <div class="container-fluid p-0 m-0 min-vh-100"
-    style="background: url(../img/手機index_img/bg35.jpg) top center;background-size:contain;">
+  <div class="container-fluid p-0 m-0 "
+    style="background: url(../img/手機index_img/bg3.png) top center no-repeat;background-size:cover;">
     <div class="container">
 
       <!-- Header -->
@@ -54,17 +61,263 @@
         // PageHeaderBanner()
       </script>
 
-      <div class="m-0 p-0 p-5">
-        <div class="p-4 row">
-          <!--  -->
-          <div class="col-12 m-0 px-1 pt-3 bg-white centerStyle rounded pb-3">
-            <h3 class="font-weight-bold text-theme3 h4">您的帳號未綁定</h3>
-            <p class="small font-weight-bold text-secondary px-3">請使用LineApp福描以下QRcode進行綁定</p>
-            <div class=" m-0 p-0">
-              <img class="img-fluid p-2 centerCenter" src="../img/手機index_img/MyPurse會員/QR2.png" alt="">
+      <div class="row m-0 p-0 p-5 min-vh-100 p_bottomListStyle vwStyle1 mx-auto"
+        style="background: url(../img/手機index_img/bg4.png) top center no-repeat;background-size:contain;">
+        <!--  -->
+        <div class="col-12 m-0 px-0 pt-0 pt-md-5" id="">
+          <!-- 改 -->
+          <div class="p-0 row textWhite mx-auto">
+            <div class="col-12 m-0 p-0">
+              <div class="row m-0 p-0">
+                <div class="col-12 m-0 py-2 px-0">
+                  <label class="align-self-center" for="">帳號/手機:</label>
+                  <input class="rounded" type="text" style="width: 28vw;">
+                  <button class="btn rounded py-1 px-2 bg-theme5 text-white fsz-08 font-weight-bold"
+                    type="button">搜尋</button>
+                </div>
+              </div>
             </div>
+            <!--  -->
+            <div class="col-12 m-0 px-1 pt-0 pb-1" style="border-width: 2px !important;">
+              <div class="row m-0 p-0 py-1 text-white centerCenter">
+                <div class="col-5 m-0 p-0 mx-auto">
+                  <select class="form-select rounded px-1 fsz-08 w-100">
+                    <option selected="">2022-09-18</option>
+                    <option value="1">2022-09-18</option>
+                  </select>
+                </div>
+                -
+                <div class="col-5 m-0 p-0 text-right mx-auto">
+                  <select class="form-select rounded px-1 fsz-08 w-100">
+                    <option selected="">2022-09-18</option>
+                    <option value="1">2022-09-18</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-12 m-0 p-0 pb-1">
+              <p>快選日期</p>
+            </div>
+            <!--  -->
+            <ul class="uk-subnav m-0 centerCenter" uk-switcher="">
+              <li class="mx-1 uk-active"><a class="px-2" href="#" aria-expanded="true">上週</a></li>
+              <li class="mx-1"><a class="px-2" href="#" aria-expanded="false">本週</a></li>
+              <li class="mx-1"><a class="px-2" href="#" aria-expanded="false">上月</a></li>
+              <li class="mx-1"><a class="px-2" href="#" aria-expanded="false">本月</a></li>
+            </ul>
+
+            <ul class="uk-switcher m-0 py-3 px-0" style="touch-action: pan-y pinch-zoom;">
+              <li class="uk-active">
+                <div class="table-responsive-sm col-12 m-0 p-0 textWhite px-0 px-md-3"
+                  style=" padding-bottom: 30% !important;">
+                  <!--  -->
+                  <table class="table table-dark textWhite tebleStyle vwStyleTable centerCenter"
+                    style="overflow-x: hidden">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="">日期</th>
+                        <th scope="col" class="">總有效投注</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--  -->
+                      <tr class="table-toggle table-active">
+                        <td class="vw25 text-left">
+                          <p class="text-left">上週總計</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="">
+                <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 30% !important;">
+                  <!--  -->
+                  <table class="table table-dark textWhite tebleStyle" style="width: 60vw;overflow-x: hidden">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="">日期</th>
+                        <th scope="col" class="">總有效投注</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--  -->
+                      <tr class="table-toggle table-active">
+                        <td class="vw25 text-left">
+                          <p class="text-left">本週總計</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="">
+                <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 30% !important;">
+                  <!--  -->
+                  <table class="table table-dark textWhite tebleStyle" style="width: 60vw;overflow-x: hidden">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="">日期</th>
+                        <th scope="col" class="">總有效投注</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--  -->
+                      <tr class="table-toggle table-active">
+                        <td class="vw25 text-left">
+                          <p class="text-left">上月總計</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="">
+                <div class="table-responsive-sm col-12 m-0 p-0 textWhite" style=" padding-bottom: 30% !important;">
+                  <!--  -->
+                  <table class="table table-dark textWhite tebleStyle" style="width: 60vw;overflow-x: hidden">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="">日期</th>
+                        <th scope="col" class="">總有效投注</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--  -->
+                      <tr class="table-toggle table-active">
+                        <td class="vw25 text-left">
+                          <p class="text-left">本月總計</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                      <!--  -->
+                      <tr class="table-toggle">
+                        <td class="vw25">
+                          <p class="text-left">2022-12-27</p>
+                        </td>
+                        <td class="vw25">
+                          <p class="">0</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+        </di>
       </div>
     </div>
   </div>
