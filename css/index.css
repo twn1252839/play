@@ -508,13 +508,13 @@ a {
 }
 
 .vwStyle {
-  width: 39vw;
+  width: 39%;
 }
 .vwStyle1 {
-  width: 39vw;
+  width: 39%;
 }
 .vwStyle2 {
-  width: 39vw;
+  width: 39%;
 }
 .vwStyleTable {
   width: 28vw !important;
@@ -531,13 +531,13 @@ a {
     z-index: 99999999999;
   }
   .vwStyle {
-    width: 70vw;
+    width: 70%;
   }
   .vwStyle1 {
-    width: 100vw;
+    width: 100%;
   }
   .vwStyle2 {
-    width: 90vw;
+    width: 90%;
   }
   .vwStyleTable {
     width: 100vw !important;
