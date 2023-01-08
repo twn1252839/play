@@ -543,7 +543,7 @@ function MDFooter() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -622,7 +622,7 @@ function MDFooter1() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -701,7 +701,7 @@ function MDFooter2() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -780,7 +780,7 @@ function MDFooter3() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
