@@ -807,14 +807,14 @@ function MDFooter3() {
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/Promotion.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb4.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb4.png' class='w-50' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/24H.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb3.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb3.png' class='w-50' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
@@ -823,21 +823,21 @@ function MDFooter3() {
   );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb5.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb5.png' class='w-50' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <div id='indexFooterBtn' class='centerCenter'>");
   document.writeln(
-    "            <img src='../img/手機index_img/b2.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/b2.png' class='w-50' alt=''>"
   );
   document.writeln("          </div>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb1.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb1.png' class='w-50' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
