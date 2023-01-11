@@ -543,7 +543,7 @@ function MDFooter() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -570,44 +570,43 @@ function MDFooter() {
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/Promotion.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb4.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb4.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/24H.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb3.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb3.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln(
-    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: -45px;'>"
+    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: 3px;'>"
   );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb5.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb5.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
-  document.writeln("          <div id='indexFooterBtn' class='centerCenter'>");
+  document.writeln("          <a href='../page/two.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb2.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb2.png' class='w-75' alt=''>"
   );
-  document.writeln("          </div>");
+  document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/b1.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/b1.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("      </div>");
   document.writeln("    </div>");
   document.writeln("  </div>");
-  document.writeln("  <script src='../js/indexFooterBtn.js'></script>");
 }
 
 // MD Footer 優惠
@@ -622,7 +621,7 @@ function MDFooter1() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -649,44 +648,43 @@ function MDFooter1() {
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/Promotion.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/b4.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/b4.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/24H.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb3.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb3.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln(
-    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: -45px;'>"
+    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: 3px;'>"
   );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb5.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb5.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
-  document.writeln("          <div id='indexFooterBtn' class='centerCenter'>");
+  document.writeln("          <a href='../page/two.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb2.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb2.png' class='w-75' alt=''>"
   );
-  document.writeln("          </div>");
+  document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb1.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb1.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("      </div>");
   document.writeln("    </div>");
   document.writeln("  </div>");
-  document.writeln("  <script src='../js/indexFooterBtn.js'></script>");
 }
 
 // MD Footer 客服
@@ -701,7 +699,7 @@ function MDFooter2() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -728,44 +726,43 @@ function MDFooter2() {
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/Promotion.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb4.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb4.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/24H.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/b3.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/b3.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln(
-    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: -45px;'>"
+    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: 3px;'>"
   );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb5.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb5.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
-  document.writeln("          <div id='indexFooterBtn' class='centerCenter'>");
+  document.writeln("          <a href='../page/two.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb2.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb2.png' class='w-75' alt=''>"
   );
-  document.writeln("          </div>");
+  document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb1.png' class='img-fluid' alt=''>"
+    "            <img src='../img/手機index_img/sb1.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("      </div>");
   document.writeln("    </div>");
   document.writeln("  </div>");
-  document.writeln("  <script src='../js/indexFooterBtn.js'></script>");
 }
 
 // MD Footer 存取款
@@ -780,7 +777,7 @@ function MDFooter3() {
   document.writeln(
     "    style='background-image: url(../img/手機index_img/bgb1.png);'>"
   );
-  document.writeln("    <div class='m-0 p-0 centerCenter container-sm'>");
+  document.writeln("    <div class='m-0 p-0 centerCenter container'>");
   document.writeln("      <!--  -->");
   document.writeln(
     "      <div class='row m-0 p-0 py-1 d-none pb-3' id='indexFooterBtnItem'>"
@@ -807,42 +804,41 @@ function MDFooter3() {
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/Promotion.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb4.png' class='w-50' alt=''>"
+    "            <img src='../img/手機index_img/sb4.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/24H.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb3.png' class='w-50' alt=''>"
+    "            <img src='../img/手機index_img/sb3.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln(
-    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: -45px;'>"
+    "        <div class='col centerCenter px-0 card_c' style='z-index: 99; margin-top: 3px;'>"
   );
   document.writeln("          <a href='../index.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb5.png' class='w-50' alt=''>"
+    "            <img src='../img/手機index_img/sb5.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
-  document.writeln("          <div id='indexFooterBtn' class='centerCenter'>");
+  document.writeln("          <a href='../page/two.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/b2.png' class='w-50' alt=''>"
+    "            <img src='../img/手機index_img/b2.png' class='w-75' alt=''>"
   );
-  document.writeln("          </div>");
+  document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("        <div class='col centerCenter px-0 card_c'>");
   document.writeln("          <a href='../page/MyPurse.html'>");
   document.writeln(
-    "            <img src='../img/手機index_img/sb1.png' class='w-50' alt=''>"
+    "            <img src='../img/手機index_img/sb1.png' class='w-75' alt=''>"
   );
   document.writeln("          </a>");
   document.writeln("        </div>");
   document.writeln("      </div>");
   document.writeln("    </div>");
   document.writeln("  </div>");
-  document.writeln("  <script src='../js/indexFooterBtn.js'></script>");
 }

@@ -30,11 +30,15 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="../js/Addhtml.js"></script>
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/UK_Page2.css">
+  <link rel="stylesheet" href="../css/UK_Page.css">
 
-  <title>存取款</title>
+  <title>取款教學</title>
   <style>
     .money_width {
       min-width: 7vw;
@@ -44,6 +48,61 @@
       .money_width {
         min-width: 17vw;
       }
+    }
+
+    /* swiper */
+    .swiper-button-next,
+    .swiper-button-prev {
+      transform: scale(.65);
+      color: #00ffff !important;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: transparent;
+    }
+
+    .swiper-pagination-bullet-active {
+      color: #fff;
+      background: #007aff;
     }
   </style>
 </head>
@@ -59,38 +118,45 @@
         PageHeader();
         // PageHeaderBanner()
       </script>
-      <!-- card -->
-      <div class="card my-2" style="background-color: rgba(54, 90, 151, 0.5);">
-        <div class="card-header bg_gradient_theme py-1 text-light font-weight-bold">
-          <div class="row m-0 p-0">
-            <div class="col m-0 p-0">支付方式</div>
-            <a class="col m-0 p-0 text-right text-theme9">存款教學</a>
+      <!-- swiping 禁止滑動 -->
+      <ul class="uk-subnav uk-subnav-pill mx-3" swiping="false" uk-switcher>
+        <li class="mx-1"><a href="#">首次取款</a></li>
+      </ul>
+      <!-- swiping -->
+      <ul class="uk-switcher uk-margin text-light">
+        <li class="uk-active">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="w-75" src="../img/手機index_img/10002.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="w-75" src="../img/手機index_img/10004.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-        </div>
-        <div class="card-body px-2 py-3">
-          <div class="row m-0 p-0">
-            <a class="col-4 p-1" href="./MyPurse1.html">
-              <img class="img-fluid" src="../img/手機index_img/1.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- card -->
-      <div class="card my-2" style="background-color: rgba(54, 90, 151, 0.5);">
-        <div class="card-header bg_gradient_theme py-1 text-light font-weight-bold">
-          <div class="row m-0 p-0">
-            <div class="col m-0 p-0">取款方式</div>
-            <a class="col m-0 p-0 text-right text-theme9">取款教學</a>
-          </div>
-        </div>
-        <div class="card-body px-2 py-3">
-          <div class="row m-0 p-0">
-            <a class="col-4 p-1" href="./MyPurse2.html">
-              <img class="img-fluid" src="../img/手機index_img/1.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
+        </li>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </ul>
     </div>
   </div>
 
